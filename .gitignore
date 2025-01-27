@@ -14,3 +14,4 @@ node_modules
 coverage
 .nyc_output
 .nyc_coverage
+src/templates/*.json
