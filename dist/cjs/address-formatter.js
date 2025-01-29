@@ -763,50 +763,50 @@ mustache.Scanner = Scanner;
 mustache.Context = Context;
 mustache.Writer = Writer;
 
-var generic1 = "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{#first}} {{{road}}} || {{{place}}} || {{{hamlet}}} {{/first}} {{{house_number}}}\n{{{addition}}}\n{{{postcode}}} {{#first}} {{{postal_city}}} || {{{town}}} || {{{city}}} || {{{village}}} || {{{municipality}}} || {{{hamlet}}} || {{{county}}} || {{{state}}} || {{/first}}\n{{{archipelago}}}\n{{{state}}} {{{county}}}\n{{{country}}}\n{{{infos}}}\n";
+var generic1 = "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{#first}} {{{road}}} || {{{place}}} || {{{hamlet}}} {{/first}} {{{house_number}}}\n{{{addition}}}\n{{{postcode}}} {{#first}} {{{postal_city}}} || {{{town}}} || {{{city}}} || {{{village}}} || {{{municipality}}} || {{{hamlet}}} || {{{county}}} || {{{state}}} || {{/first}}\n{{{archipelago}}}\n{{{country}}}\n{{{infos}}}\n";
 var generic2 = "{{{attention}}}\n{{#first}} {{{house}}}, {{{quarter}}} || {{{house}}} {{/first}}\n{{{house_number}}} {{{road}}}\n{{{addition}}}\n{{#first}} {{{village}}} || {{{town}}} || {{{city}}} || {{{municipality}}} || {{{hamlet}}} || {{{county}}} || {{/first}} {{{postcode}}}\n{{#first}} {{{country}}} || {{{state}}} || {{/first}}\n";
-var generic3 = "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{house_number}}} {{{road}}}\n{{{addition}}}\n{{{place}}}\n{{{postcode}}} {{#first}} {{{town}}} || {{{village}}} || {{{hamlet}}} || {{{city}}} || {{{municipality}}} || {{{state}}} || {{/first}}\n{{{state}}} {{{county}}}\n{{{country}}}\n{{{infos}}}\n";
-var generic4 = "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{house_number}}} {{{road}}}\n{{{addition}}}\n{{#first}} {{{village}}} || {{{hamlet}}} {{/first}}\n{{#first}} {{{city}}} || {{{town}}} || {{{state_district}}} || {{{suburb}}} || {{{municipality}}} || {{{county}}} || {{/first}}, {{#first}} {{{state_code}}} || {{{state}}} || {{/first}} {{{postcode}}}\n{{{state}}} {{{county}}}\n{{{country}}}\n{{{infos}}}\n";
-var generic5 = "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{house_number}}} {{{road}}}\n{{{addition}}}\n{{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} {{/first}}\n{{#first}} {{{state_district}}} || {{{state}}} || {{/first}}\n{{{state}}} {{{county}}}\n{{{country}}}\n{{{infos}}}\n";
-var generic6 = "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{house_number}}} {{{road}}}\n{{{addition}}}\n{{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} || {{{municipality}}} {{/first}}\n{{{county}}}\n{{{state}}}\n{{{state}}} {{{county}}}\n{{{country}}}\n{{{infos}}}\n";
-var generic7 = "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{road}}} {{{house_number}}}\n{{{addition}}}\n{{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} {{{state}}}{{/first}}, {{{postcode}}}\n{{{state}}} {{{county}}}\n{{{country}}}\n{{{infos}}}\n";
-var generic8 = "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{road}}} {{{house_number}}}\n{{{addition}}}\n{{{postcode}}} {{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} || {{{municipality}}} {{/first}} {{#first}} {{{county_code}}} || {{{county}}} || {{/first}}\n{{{state}}} {{{county}}}\n{{{country}}}\n{{{infos}}}\n";
-var generic9 = "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{road}}} {{{house_number}}}\n{{{addition}}}\n{{#first}} {{{suburb}}} || {{{city_district}}} || {{{state_district}}} {{/first}}\n{{{postcode}}} {{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} || {{{state}}} || {{/first}}\n{{{state}}} {{{county}}}\n{{{country}}}\n{{{infos}}}\n";
-var generic10 = "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{road}}}, {{{house_number}}}\n{{{addition}}}\n{{#first}} {{{suburb}}} || {{{city_district}}} {{/first}}\n{{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} {{/first}}\n{{{state}}}\n{{{state}}} {{{county}}}\n{{{country}}}\n{{{infos}}}\n{{{postcode}}}\n";
+var generic3 = "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{house_number}}} {{{road}}}\n{{{addition}}}\n{{{place}}}\n{{{postcode}}} {{#first}} {{{town}}} || {{{village}}} || {{{hamlet}}} || {{{city}}} || {{{municipality}}} || {{{state}}} || {{/first}}\n{{{country}}}\n{{{infos}}}\n";
+var generic4 = "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{house_number}}} {{{road}}}\n{{{addition}}}\n{{#first}} {{{village}}} || {{{hamlet}}} {{/first}}\n{{#first}} {{{city}}} || {{{town}}} || {{{state_district}}} || {{{suburb}}} || {{{municipality}}} || {{{county}}} || {{/first}}, {{#first}} {{{state_code}}} || {{{state}}} || {{/first}} {{{postcode}}}\n{{{country}}}\n{{{infos}}}\n";
+var generic5 = "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{house_number}}} {{{road}}}\n{{{addition}}}\n{{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} {{/first}}\n{{#first}} {{{state_district}}} || {{{state}}} || {{/first}}\n{{{country}}}\n{{{infos}}}\n";
+var generic6 = "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{house_number}}} {{{road}}}\n{{{addition}}}\n{{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} || {{{municipality}}} {{/first}}\n{{{county}}}\n{{{state}}}\n{{{country}}}\n{{{infos}}}\n";
+var generic7 = "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{road}}} {{{house_number}}}\n{{{addition}}}\n{{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} {{{state}}}{{/first}}, {{{postcode}}}\n{{{county}}}\n{{{country}}}\n{{{infos}}}\n";
+var generic8 = "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{road}}} {{{house_number}}}\n{{{addition}}}\n{{{postcode}}} {{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} || {{{municipality}}} {{/first}} {{#first}} {{{county_code}}} || {{{county}}} || {{/first}}\n{{{country}}}\n{{{infos}}}\n";
+var generic9 = "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{road}}} {{{house_number}}}\n{{{addition}}}\n{{#first}} {{{suburb}}} || {{{city_district}}} || {{{state_district}}} {{/first}}\n{{{postcode}}} {{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} || {{{state}}} || {{/first}}\n{{{country}}}\n{{{infos}}}\n";
+var generic10 = "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{road}}}, {{{house_number}}}\n{{{addition}}}\n{{#first}} {{{suburb}}} || {{{city_district}}} {{/first}}\n{{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} {{/first}}\n{{{state}}}\n{{{country}}}\n{{{infos}}}\n{{{postcode}}}\n";
 var generic11 = "{{{country}}}\n{{{infos}}}\n{{{state}}}\n{{{postcode}}} {{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} {{/first}}\n{{{suburb}}}\n{{{road}}}, {{{house_number}}}\n{{{addition}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{attention}}}\n";
-var generic12 = "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{house_number}}}, {{{road}}}\n{{{addition}}}\n{{#first}} {{{suburb}}} || {{{city_district}}} || {{{state_district}}} {{/first}}\n{{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} {{/first}} - {{{postcode}}}\n{{{state}}}\n{{{state}}} {{{county}}}\n{{{country}}}\n{{{infos}}}\n";
-var generic13 = "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{house_number}}} {{{road}}}\n{{{addition}}}\n{{#first}} {{{suburb}}} || {{{city_district}}} || {{{city}}} || {{{town}}} || {{{state_district}}} || {{{village}}} || {{{hamlet}}} || {{{region}}} {{/first}} {{#first}} {{{state_code}}} || {{{state}}} || {{/first}} {{{postcode}}}\n{{{state}}} {{{county}}}\n{{{country}}}\n{{{infos}}}\n";
-var generic14 = "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{house_number}}} {{{road}}}\n{{{addition}}}\n{{{postcode}}} {{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} || {{{state_district}}} {{/first}}\n{{{state}}}\n{{{state}}} {{{county}}}\n{{{country}}}\n{{{infos}}}\n";
-var generic15 = "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{road}}}, {{{house_number}}}\n{{{addition}}}\n{{{postcode}}} {{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} || {{{municipality}}} || {{{state}}} || {{{county}}} || {{/first}}\n{{{state}}} {{{county}}}\n{{{country}}}\n{{{infos}}}\n";
-var generic16 = "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{house_number}}} {{{road}}}\n{{{addition}}}\n{{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} || {{{municipality}}} || {{{county}}} || {{{state_district}}} || {{{state}}} || {{/first}}\n{{{state}}} {{{county}}}\n{{{country}}}\n{{{infos}}}\n";
-var generic17 = "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{road}}} {{{house_number}}}\n{{{addition}}}\n{{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} || {{{municipality}}} || {{{county}}} || {{{state_district}}} || {{{state}}} || {{/first}}\n{{{state}}} {{{county}}}\n{{{country}}}\n{{{infos}}}\n";
-var generic18 = "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{house_number}}}, {{{road}}}\n{{{addition}}}\n{{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} || {{{suburb}}} || {{{city_district}}} || {{{neighbourhood}}} || {{{state}}} || {{/first}}\n{{{state}}} {{{county}}}\n{{{country}}}\n{{{infos}}}\n";
-var generic19 = "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{road}}} {{{house_number}}}\n{{{addition}}}\n{{#first}} {{{suburb}}} || {{{city_district}}} || {{{neighbourhood}}} {{/first}}\n{{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} {{/first}} {{{postcode}}}\n{{{state}}} {{{county}}}\n{{{country}}}\n{{{infos}}}\n";
-var generic20 = "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{house_number}}} {{{road}}}\n{{{addition}}}\n{{#first}} {{{suburb}}} || {{{city_district}}} || {{{neighbourhood}}} {{/first}}\n{{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} {{/first}} {{{postcode}}}\n{{{state}}} {{{county}}}\n{{{country}}}\n{{{infos}}}\n";
-var generic21 = "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{road}}} {{{house_number}}}\n{{{addition}}}\n{{#first}} {{{suburb}}} || {{{city_district}}} || {{{neighbourhood}}} {{/first}}\n{{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} || {{{state}}} || {{/first}}\n{{{state}}} {{{county}}}\n{{{country}}}\n{{{infos}}}\n";
-var generic22 = "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{house_number}}}, {{{road}}}\n{{{addition}}}\n{{{postcode}}} {{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} || {{{state}}} || {{/first}}\n{{{state}}} {{{county}}}\n{{{country}}}\n{{{infos}}}\n";
+var generic12 = "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{house_number}}}, {{{road}}}\n{{{addition}}}\n{{#first}} {{{suburb}}} || {{{city_district}}} || {{{state_district}}} {{/first}}\n{{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} {{/first}} - {{{postcode}}}\n{{{state}}}\n{{{country}}}\n{{{infos}}}\n";
+var generic13 = "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{house_number}}} {{{road}}}\n{{{addition}}}\n{{#first}} {{{suburb}}} || {{{city_district}}} || {{{city}}} || {{{town}}} || {{{state_district}}} || {{{village}}} || {{{hamlet}}} || {{{region}}} {{/first}} {{#first}} {{{state_code}}} || {{{state}}} || {{/first}} {{{postcode}}}\n{{{country}}}\n{{{infos}}}\n";
+var generic14 = "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{house_number}}} {{{road}}}\n{{{addition}}}\n{{{postcode}}} {{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} || {{{state_district}}} {{/first}}\n{{{state}}}\n{{{country}}}\n{{{infos}}}\n";
+var generic15 = "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{road}}}, {{{house_number}}}\n{{{addition}}}\n{{{postcode}}} {{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} || {{{municipality}}} || {{{state}}} || {{{county}}} || {{/first}}\n{{{country}}}\n{{{infos}}}\n";
+var generic16 = "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{house_number}}} {{{road}}}\n{{{addition}}}\n{{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} || {{{municipality}}} || {{{county}}} || {{{state_district}}} || {{{state}}} || {{/first}}\n{{{country}}}\n{{{infos}}}\n";
+var generic17 = "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{road}}} {{{house_number}}}\n{{{addition}}}\n{{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} || {{{municipality}}} || {{{county}}} || {{{state_district}}} || {{{state}}} || {{/first}}\n{{{country}}}\n{{{infos}}}\n";
+var generic18 = "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{house_number}}}, {{{road}}}\n{{{addition}}}\n{{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} || {{{suburb}}} || {{{city_district}}} || {{{neighbourhood}}} || {{{state}}} || {{/first}}\n{{{country}}}\n{{{infos}}}\n";
+var generic19 = "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{road}}} {{{house_number}}}\n{{{addition}}}\n{{#first}} {{{suburb}}} || {{{city_district}}} || {{{neighbourhood}}} {{/first}}\n{{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} {{/first}} {{{postcode}}}\n{{{country}}}\n{{{infos}}}\n";
+var generic20 = "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{house_number}}} {{{road}}}\n{{{addition}}}\n{{#first}} {{{suburb}}} || {{{city_district}}} || {{{neighbourhood}}} {{/first}}\n{{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} {{/first}} {{{postcode}}}\n{{{country}}}\n{{{infos}}}\n";
+var generic21 = "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{road}}} {{{house_number}}}\n{{{addition}}}\n{{#first}} {{{suburb}}} || {{{city_district}}} || {{{neighbourhood}}} {{/first}}\n{{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} || {{{state}}} || {{/first}}\n{{{country}}}\n{{{infos}}}\n";
+var generic22 = "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{house_number}}}, {{{road}}}\n{{{addition}}}\n{{{postcode}}} {{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} || {{{state}}} || {{/first}}\n{{{country}}}\n{{{infos}}}\n";
 var generic23 = "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{house_number}}} {{{road}}}\n{{{addition}}}\n{{{quarter}}}\n{{#first}} {{{village}}} || {{{town}}} || {{{city}}} || {{{municipality}}} || {{{hamlet}}} || {{{county}}} || {{/first}}\n{{{postcode}}}\n{{#first}} {{{country}}} || {{{state}}} || {{/first}}\n";
-var fallback1 = "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{road}}} {{{house_number}}}\n{{{addition}}}\n{{{place}}}\n{{#first}} {{{suburb}}} || {{{city_district}}} || {{{neighbourhood}}} || {{{island}}} {{/first}}\n{{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} || {{{municipality}}} {{/first}}\n{{#first}} || {{{county}}} || {{{state_district}}} || {{{state}}} || {{{region}}} || {{{island}}}, {{{archipelago}}} {{/first}}\n{{{state}}} {{{county}}}\n{{{country}}}\n{{{infos}}}\n";
+var fallback1 = "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{road}}} {{{house_number}}}\n{{{addition}}}\n{{{place}}}\n{{#first}} {{{suburb}}} || {{{city_district}}} || {{{neighbourhood}}} || {{{island}}} {{/first}}\n{{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} || {{{municipality}}} {{/first}}\n{{#first}} || {{{county}}} || {{{state_district}}} || {{{state}}} || {{{region}}} || {{{island}}}, {{{archipelago}}} {{/first}}\n{{{country}}}\n{{{infos}}}\n";
 var fallback2 = "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{road}}} {{{house_number}}}\n{{{addition}}}\n{{{place}}}\n{{#first}} {{{suburb}}} || {{{village}}} || {{{hamlet}}} {{/first}}\n{{#first}} {{{city}}} || {{{town}}} || {{{municipality}}} || {{{county}}} || {{{island}}} || {{{state_district}}} {{/first}}, {{#first}} || {{{state}}} || {{{state_code}}} {{/first}}\n{{{country}}}\n{{{infos}}}\n";
-var fallback3 = "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{road}}} {{{house_number}}}\n{{{addition}}}\n{{{place}}}\n{{#first}} {{{suburb}}} || {{{island}}} {{/first}}\n{{#first}} {{{village}}} || {{{hamlet}}} || {{{municipality}}} {{/first}}\n{{#first}} {{{town}}} || {{{city}}}{{/first}}\n{{{county}}}\n{{#first}} || {{{state}}} || {{{state_code}}} {{/first}}\n{{{state}}} {{{county}}}\n{{{country}}}\n{{{infos}}}\n";
-var fallback4 = "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{road}}} {{{house_number}}}\n{{{addition}}}\n{{{place}}}\n{{{suburb}}}\n{{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} || {{{municipality}}} || {{{county}}} || {{/first}}\n{{#first}} || {{{state}}} || {{{county}}} || {{/first}}\n{{{state}}} {{{county}}}\n{{{country}}}\n{{{infos}}}\n";
+var fallback3 = "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{road}}} {{{house_number}}}\n{{{addition}}}\n{{{place}}}\n{{#first}} {{{suburb}}} || {{{island}}} {{/first}}\n{{#first}} {{{village}}} || {{{hamlet}}} || {{{municipality}}} {{/first}}\n{{#first}} {{{town}}} || {{{city}}}{{/first}}\n{{{county}}}\n{{#first}} || {{{state}}} || {{{state_code}}} {{/first}}\n{{{country}}}\n{{{infos}}}\n";
+var fallback4 = "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{road}}} {{{house_number}}}\n{{{addition}}}\n{{{place}}}\n{{{suburb}}}\n{{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} || {{{municipality}}} || {{{county}}} || {{/first}}\n{{#first}} || {{{state}}} || {{{county}}} || {{/first}}\n{{{country}}}\n{{{infos}}}\n";
 var AD$2 = {
-	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{house_number}}} {{{road}}}\n{{{addition}}}\n{{{place}}}\n{{{postcode}}} {{#first}} {{{town}}} || {{{village}}} || {{{hamlet}}} || {{{city}}} || {{{municipality}}} || {{{state}}} || {{/first}}\n{{{state}}} {{{county}}}\n{{{country}}}\n{{{infos}}}\n"
+	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{house_number}}} {{{road}}}\n{{{addition}}}\n{{{place}}}\n{{{postcode}}} {{#first}} {{{town}}} || {{{village}}} || {{{hamlet}}} || {{{city}}} || {{{municipality}}} || {{{state}}} || {{/first}}\n{{{country}}}\n{{{infos}}}\n"
 };
 var AE$3 = {
-	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{house_number}}} {{{road}}}\n{{{addition}}}\n{{#first}} {{{suburb}}} || {{{city_district}}} || {{{neighbourhood}}} {{/first}}\n{{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} {{/first}}\n{{#first}} {{{state_district}}} || {{{state}}} || {{/first}}\n{{{state}}} {{{county}}}\n{{{country}}}\n{{{infos}}}\n"
+	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{house_number}}} {{{road}}}\n{{{addition}}}\n{{#first}} {{{suburb}}} || {{{city_district}}} || {{{neighbourhood}}} {{/first}}\n{{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} {{/first}}\n{{#first}} {{{state_district}}} || {{{state}}} || {{/first}}\n{{{country}}}\n{{{infos}}}\n"
 };
 var AF$3 = {
-	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{road}}} {{{house_number}}}\n{{{addition}}}\n{{#first}} {{{suburb}}} || {{{city_district}}} || {{{neighbourhood}}} {{/first}}\n{{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} || {{{state}}} || {{/first}}\n{{{state}}} {{{county}}}\n{{{country}}}\n{{{infos}}}\n"
+	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{road}}} {{{house_number}}}\n{{{addition}}}\n{{#first}} {{{suburb}}} || {{{city_district}}} || {{{neighbourhood}}} {{/first}}\n{{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} || {{{state}}} || {{/first}}\n{{{country}}}\n{{{infos}}}\n"
 };
 var AG$2 = {
-	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{house_number}}} {{{road}}}\n{{{addition}}}\n{{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} || {{{municipality}}} || {{{county}}} || {{{state_district}}} || {{{state}}} || {{/first}}\n{{{state}}} {{{county}}}\n{{{country}}}\n{{{infos}}}\n"
+	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{house_number}}} {{{road}}}\n{{{addition}}}\n{{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} || {{{municipality}}} || {{{county}}} || {{{state_district}}} || {{{state}}} || {{/first}}\n{{{country}}}\n{{{infos}}}\n"
 };
 var AI$2 = {
 	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{road}}} {{{house_number}}}\n{{{addition}}}\n{{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} {{/first}}\n{{{postcode}}} {{{country}}}\n{{{infos}}}\n"
 };
 var AL$2 = {
-	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{road}}} {{{house_number}}}\n{{{addition}}}\n{{{postcode}}} {{#first}} {{{city}}} || {{{town}}} || {{{city_district}}} || {{{municipality}}} || {{{state_district}}} || {{{village}}} || {{{hamlet}}} {{/first}}\n{{{state}}} {{{county}}}\n{{{country}}}\n{{{infos}}}\n",
+	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{road}}} {{{house_number}}}\n{{{addition}}}\n{{{postcode}}} {{#first}} {{{city}}} || {{{town}}} || {{{city_district}}} || {{{municipality}}} || {{{state_district}}} || {{{village}}} || {{{hamlet}}} {{/first}}\n{{{country}}}\n{{{infos}}}\n",
 	postformat_replace: [
 		[
 			"\n(\\d{4}) ([^,]*)\n",
@@ -815,17 +815,17 @@ var AL$2 = {
 	]
 };
 var AM$3 = {
-	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{house_number}}} {{{road}}}\n{{{addition}}}\n{{{postcode}}}\n{{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} {{/first}}\n{{#first}} {{{state_district}}} || {{{state}}} || {{/first}}\n{{{state}}} {{{county}}}\n{{{country}}}\n{{{infos}}}\n"
+	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{house_number}}} {{{road}}}\n{{{addition}}}\n{{{postcode}}}\n{{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} {{/first}}\n{{#first}} {{{state_district}}} || {{{state}}} || {{/first}}\n{{{country}}}\n{{{infos}}}\n"
 };
 var AO$3 = {
-	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{road}}} {{{house_number}}}\n{{{addition}}}\n{{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} {{{state}}}{{/first}}, {{{postcode}}}\n{{{state}}} {{{county}}}\n{{{country}}}\n{{{infos}}}\n"
+	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{road}}} {{{house_number}}}\n{{{addition}}}\n{{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} {{{state}}}{{/first}}, {{{postcode}}}\n{{{country}}}\n{{{infos}}}\n"
 };
 var AQ$2 = {
 	address_template: "{{{house}}}\n{{{floor}}} {{{door}}}\n{{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} {{/first}}\n{{#first}} {{{country}}} || {{{continent}}} {{/first}}\n",
 	fallback_template: "{{{house}}}\n{{{floor}}} {{{door}}}\n{{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} {{/first}}\n{{#first}} {{{country}}} || {{{continent}}} {{/first}}\n"
 };
 var AR$3 = {
-	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{road}}} {{{house_number}}}\n{{{addition}}}\n{{#first}} {{{suburb}}} || {{{city_district}}} || {{{state_district}}} {{/first}}\n{{{postcode}}} {{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} || {{{state}}} || {{/first}}\n{{{state}}} {{{county}}}\n{{{country}}}\n{{{infos}}}\n",
+	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{road}}} {{{house_number}}}\n{{{addition}}}\n{{#first}} {{{suburb}}} || {{{city_district}}} || {{{state_district}}} {{/first}}\n{{{postcode}}} {{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} || {{{state}}} || {{/first}}\n{{{country}}}\n{{{infos}}}\n",
 	replace: [
 		[
 			"^Autonomous City of ",
@@ -845,47 +845,47 @@ var AS$2 = {
 	add_component: "state=American Samoa"
 };
 var AT$3 = {
-	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{#first}} {{{road}}} || {{{place}}} || {{{hamlet}}} {{/first}} {{{house_number}}}\n{{{addition}}}\n{{{postcode}}} {{#first}} {{{postal_city}}} || {{{town}}} || {{{city}}} || {{{village}}} || {{{municipality}}} || {{{hamlet}}} || {{{county}}} || {{{state}}} || {{/first}}\n{{{archipelago}}}\n{{{state}}} {{{county}}}\n{{{country}}}\n{{{infos}}}\n"
+	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{#first}} {{{road}}} || {{{place}}} || {{{hamlet}}} {{/first}} {{{house_number}}}\n{{{addition}}}\n{{{postcode}}} {{#first}} {{{postal_city}}} || {{{town}}} || {{{city}}} || {{{village}}} || {{{municipality}}} || {{{hamlet}}} || {{{county}}} || {{{state}}} || {{/first}}\n{{{archipelago}}}\n{{{country}}}\n{{{infos}}}\n"
 };
 var AU$3 = {
-	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{house_number}}} {{{road}}}\n{{{addition}}}\n{{#first}} {{{suburb}}} || {{{city_district}}} || {{{city}}} || {{{town}}} || {{{state_district}}} || {{{village}}} || {{{hamlet}}} || {{{region}}} {{/first}} {{#first}} {{{state_code}}} || {{{state}}} || {{/first}} {{{postcode}}}\n{{{state}}} {{{county}}}\n{{{country}}}\n{{{infos}}}\n"
+	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{house_number}}} {{{road}}}\n{{{addition}}}\n{{#first}} {{{suburb}}} || {{{city_district}}} || {{{city}}} || {{{town}}} || {{{state_district}}} || {{{village}}} || {{{hamlet}}} || {{{region}}} {{/first}} {{#first}} {{{state_code}}} || {{{state}}} || {{/first}} {{{postcode}}}\n{{{country}}}\n{{{infos}}}\n"
 };
 var AW$2 = {
-	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{road}}} {{{house_number}}}\n{{{addition}}}\n{{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} || {{{municipality}}} || {{{county}}} || {{{state_district}}} || {{{state}}} || {{/first}}\n{{{state}}} {{{county}}}\n{{{country}}}\n{{{infos}}}\n"
+	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{road}}} {{{house_number}}}\n{{{addition}}}\n{{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} || {{{municipality}}} || {{{county}}} || {{{state_district}}} || {{{state}}} || {{/first}}\n{{{country}}}\n{{{infos}}}\n"
 };
 var AX$2 = {
 	use_country: "FI",
 	change_country: "Åland, Finland"
 };
 var AZ$3 = {
-	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{house_number}}} {{{road}}}\n{{{addition}}}\n{{{place}}}\n{{{postcode}}} {{#first}} {{{town}}} || {{{village}}} || {{{hamlet}}} || {{{city}}} || {{{municipality}}} || {{{state}}} || {{/first}}\n{{{state}}} {{{county}}}\n{{{country}}}\n{{{infos}}}\n"
+	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{house_number}}} {{{road}}}\n{{{addition}}}\n{{{place}}}\n{{{postcode}}} {{#first}} {{{town}}} || {{{village}}} || {{{hamlet}}} || {{{city}}} || {{{municipality}}} || {{{state}}} || {{/first}}\n{{{country}}}\n{{{infos}}}\n"
 };
 var BA$3 = {
-	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{#first}} {{{road}}} || {{{place}}} || {{{hamlet}}} {{/first}} {{{house_number}}}\n{{{addition}}}\n{{{postcode}}} {{#first}} {{{postal_city}}} || {{{town}}} || {{{city}}} || {{{village}}} || {{{municipality}}} || {{{hamlet}}} || {{{county}}} || {{{state}}} || {{/first}}\n{{{archipelago}}}\n{{{state}}} {{{county}}}\n{{{country}}}\n{{{infos}}}\n"
+	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{#first}} {{{road}}} || {{{place}}} || {{{hamlet}}} {{/first}} {{{house_number}}}\n{{{addition}}}\n{{{postcode}}} {{#first}} {{{postal_city}}} || {{{town}}} || {{{city}}} || {{{village}}} || {{{municipality}}} || {{{hamlet}}} || {{{county}}} || {{{state}}} || {{/first}}\n{{{archipelago}}}\n{{{country}}}\n{{{infos}}}\n"
 };
 var BB$2 = {
-	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{house_number}}} {{{road}}}\n{{{addition}}}\n{{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} || {{{municipality}}} || {{{county}}} || {{{state_district}}} || {{{state}}} || {{/first}}\n{{{state}}} {{{county}}}\n{{{country}}}\n{{{infos}}}\n"
+	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{house_number}}} {{{road}}}\n{{{addition}}}\n{{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} || {{{municipality}}} || {{{county}}} || {{{state_district}}} || {{{state}}} || {{/first}}\n{{{country}}}\n{{{infos}}}\n"
 };
 var BD$3 = {
-	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{house_number}}} {{{road}}}\n{{{addition}}}\n{{#first}} {{{suburb}}} || {{{city_district}}} || {{{state_district}}} {{/first}}\n{{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} {{/first}} - {{{postcode}}}\n{{{state}}} {{{county}}}\n{{{country}}}\n{{{infos}}}\n"
+	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{house_number}}} {{{road}}}\n{{{addition}}}\n{{#first}} {{{suburb}}} || {{{city_district}}} || {{{state_district}}} {{/first}}\n{{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} {{/first}} - {{{postcode}}}\n{{{country}}}\n{{{infos}}}\n"
 };
 var BE$3 = {
-	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{road}}} {{{house_number}}}\n{{{addition}}}\n{{{postcode}}} {{#first}} {{{postal_city}}} || {{{town}}} || {{{city}}} || {{{village}}} || {{{municipality}}} || {{{hamlet}}} || {{{county}}} || {{{state}}} || {{/first}}\n{{{archipelago}}}\n{{{state}}} {{{county}}}\n{{{country}}}\n{{{infos}}}\n"
+	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{road}}} {{{house_number}}}\n{{{addition}}}\n{{{postcode}}} {{#first}} {{{postal_city}}} || {{{town}}} || {{{city}}} || {{{village}}} || {{{municipality}}} || {{{hamlet}}} || {{{county}}} || {{{state}}} || {{/first}}\n{{{archipelago}}}\n{{{country}}}\n{{{infos}}}\n"
 };
 var BF$3 = {
-	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{house_number}}} {{{road}}}\n{{{addition}}}\n{{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} || {{{municipality}}} {{/first}}\n{{{county}}}\n{{{state}}}\n{{{state}}} {{{county}}}\n{{{country}}}\n{{{infos}}}\n"
+	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{house_number}}} {{{road}}}\n{{{addition}}}\n{{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} || {{{municipality}}} {{/first}}\n{{{county}}}\n{{{state}}}\n{{{country}}}\n{{{infos}}}\n"
 };
 var BG$2 = {
-	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{road}}} {{{house_number}}}\n{{{addition}}}\n{{#first}} {{{suburb}}} || {{{city_district}}} || {{{neighbourhood}}} {{/first}}\n{{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} {{/first}} {{{postcode}}}\n{{{state}}} {{{county}}}\n{{{country}}}\n{{{infos}}}\n"
+	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{road}}} {{{house_number}}}\n{{{addition}}}\n{{#first}} {{{suburb}}} || {{{city_district}}} || {{{neighbourhood}}} {{/first}}\n{{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} {{/first}} {{{postcode}}}\n{{{country}}}\n{{{infos}}}\n"
 };
 var BH$2 = {
 	address_template: "{{{attention}}}\n{{#first}} {{{house}}}, {{{quarter}}} || {{{house}}} {{/first}}\n{{{house_number}}} {{{road}}}\n{{{addition}}}\n{{#first}} {{{village}}} || {{{town}}} || {{{city}}} || {{{municipality}}} || {{{hamlet}}} || {{{county}}} || {{/first}} {{{postcode}}}\n{{#first}} {{{country}}} || {{{state}}} || {{/first}}\n"
 };
 var BI$3 = {
-	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{road}}} {{{house_number}}}\n{{{addition}}}\n{{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} || {{{municipality}}} || {{{county}}} || {{{state_district}}} || {{{state}}} || {{/first}}\n{{{state}}} {{{county}}}\n{{{country}}}\n{{{infos}}}\n"
+	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{road}}} {{{house_number}}}\n{{{addition}}}\n{{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} || {{{municipality}}} || {{{county}}} || {{{state_district}}} || {{{state}}} || {{/first}}\n{{{country}}}\n{{{infos}}}\n"
 };
 var BJ$3 = {
-	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{house_number}}}, {{{road}}}\n{{{addition}}}\n{{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} || {{{suburb}}} || {{{city_district}}} || {{{neighbourhood}}} || {{{state}}} || {{/first}}\n{{{state}}} {{{county}}}\n{{{country}}}\n{{{infos}}}\n"
+	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{house_number}}}, {{{road}}}\n{{{addition}}}\n{{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} || {{{suburb}}} || {{{city_district}}} || {{{neighbourhood}}} || {{{state}}} || {{/first}}\n{{{country}}}\n{{{infos}}}\n"
 };
 var BL$2 = {
 	use_country: "FR",
@@ -895,10 +895,10 @@ var BM$2 = {
 	address_template: "{{{attention}}}\n{{#first}} {{{house}}}, {{{quarter}}} || {{{house}}} {{/first}}\n{{{house_number}}} {{{road}}}\n{{{addition}}}\n{{#first}} {{{village}}} || {{{town}}} || {{{city}}} || {{{municipality}}} || {{{hamlet}}} || {{{county}}} || {{/first}} {{{postcode}}}\n{{#first}} {{{country}}} || {{{state}}} || {{/first}}\n"
 };
 var BN$3 = {
-	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{house_number}}}, {{{road}}}\n{{{addition}}}\n{{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} || {{{municipality}}} {{/first}}\n{{#first}} || {{{county}}} || {{{state_district}}} || {{{state}}} || {{/first}} {{{postcode}}}\n{{{state}}} {{{county}}}\n{{{country}}}\n{{{infos}}}\n"
+	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{house_number}}}, {{{road}}}\n{{{addition}}}\n{{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} || {{{municipality}}} {{/first}}\n{{#first}} || {{{county}}} || {{{state_district}}} || {{{state}}} || {{/first}} {{{postcode}}}\n{{{country}}}\n{{{infos}}}\n"
 };
 var BO$3 = {
-	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{road}}} {{{house_number}}}\n{{{addition}}}\n{{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} || {{{municipality}}} || {{{county}}} || {{{state_district}}} || {{{state}}} || {{/first}}\n{{{state}}} {{{county}}}\n{{{country}}}\n{{{infos}}}\n",
+	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{road}}} {{{house_number}}}\n{{{addition}}}\n{{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} || {{{municipality}}} || {{{county}}} || {{{state_district}}} || {{{state}}} || {{/first}}\n{{{country}}}\n{{{infos}}}\n",
 	replace: [
 		[
 			"^Municipio Nuestra Senora de ",
@@ -911,7 +911,7 @@ var BQ$2 = {
 	change_country: "Caribbean Netherlands"
 };
 var BR$3 = {
-	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{road}}} {{{house_number}}}\n{{{addition}}}\n{{#first}} {{{suburb}}} || {{{city_district}}} || {{{village}}} || {{{hamlet}}}{{/first}}\n{{#first}} {{{city}}} || {{{town}}} || {{{state_district}}} {{/first}} - {{#first}} {{{state_code}}} || {{{state}}} || {{/first}}\n{{{postcode}}}\n{{{state}}} {{{county}}}\n{{{country}}}\n{{{infos}}}\n",
+	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{road}}} {{{house_number}}}\n{{{addition}}}\n{{#first}} {{{suburb}}} || {{{city_district}}} || {{{village}}} || {{{hamlet}}}{{/first}}\n{{#first}} {{{city}}} || {{{town}}} || {{{state_district}}} {{/first}} - {{#first}} {{{state_code}}} || {{{state}}} || {{/first}}\n{{{postcode}}}\n{{{country}}}\n{{{infos}}}\n",
 	postformat_replace: [
 		[
 			"\\b(\\d{5})(\\d{3})\\b",
@@ -920,27 +920,27 @@ var BR$3 = {
 	]
 };
 var BS$2 = {
-	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{road}}} {{{house_number}}}\n{{{addition}}}\n{{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} || {{{municipality}}} {{/first}}\n{{{county}}}\n{{{state}}} {{{county}}}\n{{{country}}}\n{{{infos}}}\n"
+	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{road}}} {{{house_number}}}\n{{{addition}}}\n{{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} || {{{municipality}}} {{/first}}\n{{{county}}}\n{{{country}}}\n{{{infos}}}\n"
 };
 var BT$2 = {
-	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{road}}} {{{house_number}}}, {{{house}}}\n{{{floor}}} {{{door}}}\n{{#first}} {{{suburb}}} || {{{city_district}}} || {{{neighbourhood}}} {{/first}}\n{{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} || {{{state}}} || {{/first}} {{{postcode}}}\n{{{state}}} {{{county}}}\n{{{country}}}\n{{{infos}}}\n"
+	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{road}}} {{{house_number}}}, {{{house}}}\n{{{floor}}} {{{door}}}\n{{#first}} {{{suburb}}} || {{{city_district}}} || {{{neighbourhood}}} {{/first}}\n{{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} || {{{state}}} || {{/first}} {{{postcode}}}\n{{{country}}}\n{{{infos}}}\n"
 };
 var BV$2 = {
 	use_country: "NO",
 	change_country: "Bouvet Island, Norway"
 };
 var BW$3 = {
-	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{road}}} {{{house_number}}}\n{{{addition}}}\n{{#first}} {{{suburb}}} || {{{city_district}}} || {{{neighbourhood}}} {{/first}}\n{{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} {{/first}}\n{{{state}}} {{{county}}}\n{{{country}}}\n{{{infos}}}\n"
+	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{road}}} {{{house_number}}}\n{{{addition}}}\n{{#first}} {{{suburb}}} || {{{city_district}}} || {{{neighbourhood}}} {{/first}}\n{{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} {{/first}}\n{{{country}}}\n{{{infos}}}\n"
 };
 var BY$3 = {
 	address_template: "{{{country}}}\n{{{infos}}}\n{{{state}}}\n{{{postcode}}} {{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} {{/first}}\n{{{suburb}}}\n{{{road}}}, {{{house_number}}}\n{{{addition}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{attention}}}\n"
 };
 var BZ$3 = {
-	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{house_number}}} {{{road}}}\n{{{addition}}}\n{{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} || {{{municipality}}} || {{{county}}} || {{{state_district}}} || {{{state}}} || {{/first}}\n{{{state}}} {{{county}}}\n{{{country}}}\n{{{infos}}}\n"
+	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{house_number}}} {{{road}}}\n{{{addition}}}\n{{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} || {{{municipality}}} || {{{county}}} || {{{state_district}}} || {{{state}}} || {{/first}}\n{{{country}}}\n{{{infos}}}\n"
 };
 var CA$4 = {
-	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{#first}} {{{house_number}}} {{{road}}} || {{{suburb}}} {{/first}}\n{{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} || {{{county}}} || {{{state_district}}} {{/first}}, {{#first}} {{{state_code}}} || {{{state}}} || {{/first}} {{{postcode}}}\n{{{state}}} {{{county}}}\n{{{country}}}\n{{{infos}}}\n",
-	fallback_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{#first}} {{{house_number}}} {{{road}}} || {{{suburb}}} {{/first}}\n{{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} || {{{county}}} || {{{state_district}}} {{/first}}, {{#first}} {{{state_code}}} || {{{state}}} || {{/first}} {{{postcode}}}\n{{{state}}} {{{county}}}\n{{{country}}}\n{{{infos}}}\n",
+	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{#first}} {{{house_number}}} {{{road}}} || {{{suburb}}} {{/first}}\n{{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} || {{{county}}} || {{{state_district}}} {{/first}}, {{#first}} {{{state_code}}} || {{{state}}} || {{/first}} {{{postcode}}}\n{{{country}}}\n{{{infos}}}\n",
+	fallback_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{#first}} {{{house_number}}} {{{road}}} || {{{suburb}}} {{/first}}\n{{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} || {{{county}}} || {{{state_district}}} {{/first}}, {{#first}} {{{state_code}}} || {{{state}}} || {{/first}} {{{postcode}}}\n{{{country}}}\n{{{infos}}}\n",
 	postformat_replace: [
 		[
 			" ([A-Za-z]{2}) ([A-Za-z]\\d[A-Za-z])(\\d[A-Za-z]\\d)\n",
@@ -949,8 +949,8 @@ var CA$4 = {
 	]
 };
 var CA_en = {
-	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{#first}} {{{house_number}}} {{{road}}} || {{{suburb}}} {{/first}}\n{{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} || {{{county}}} || {{{state_district}}} {{/first}}, {{#first}} {{{state_code}}} || {{{state}}} || {{/first}} {{{postcode}}}\n{{{state}}} {{{county}}}\n{{{country}}}\n{{{infos}}}\n",
-	fallback_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{#first}} {{{house_number}}} {{{road}}} || {{{suburb}}} {{/first}}\n{{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} || {{{county}}} || {{{state_district}}} {{/first}}, {{#first}} {{{state_code}}} || {{{state}}} || {{/first}} {{{postcode}}}\n{{{state}}} {{{county}}}\n{{{country}}}\n{{{infos}}}\n",
+	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{#first}} {{{house_number}}} {{{road}}} || {{{suburb}}} {{/first}}\n{{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} || {{{county}}} || {{{state_district}}} {{/first}}, {{#first}} {{{state_code}}} || {{{state}}} || {{/first}} {{{postcode}}}\n{{{country}}}\n{{{infos}}}\n",
+	fallback_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{#first}} {{{house_number}}} {{{road}}} || {{{suburb}}} {{/first}}\n{{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} || {{{county}}} || {{{state_district}}} {{/first}}, {{#first}} {{{state_code}}} || {{{state}}} || {{/first}} {{{postcode}}}\n{{{country}}}\n{{{infos}}}\n",
 	postformat_replace: [
 		[
 			" ([A-Za-z]{2}) ([A-Za-z]\\d[A-Za-z])(\\d[A-Za-z]\\d)\n",
@@ -959,7 +959,7 @@ var CA_en = {
 	]
 };
 var CA_fr = {
-	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{#first}} {{{house_number}}}, {{{road}}} || {{{suburb}}} {{/first}}\n{{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} || {{{county}}} || {{{state_district}}} {{/first}} {{#first}} ({{{state_code}}}) {{{state}}} {{/first}} {{{postcode}}}\n{{{state}}} {{{county}}}\n{{{country}}}\n{{{infos}}}\n",
+	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{#first}} {{{house_number}}}, {{{road}}} || {{{suburb}}} {{/first}}\n{{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} || {{{county}}} || {{{state_district}}} {{/first}} {{#first}} ({{{state_code}}}) {{{state}}} {{/first}} {{{postcode}}}\n{{{country}}}\n{{{infos}}}\n",
 	postformat_replace: [
 		[
 			" ([A-Za-z]{2}) ([A-Za-z]\\d[A-Za-z])(\\d[A-Za-z]\\d)\n",
@@ -972,16 +972,16 @@ var CC$2 = {
 	change_country: "Australia"
 };
 var CD$3 = {
-	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{house_number}}}, {{{road}}}\n{{{addition}}}\n{{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} || {{{suburb}}} || {{{city_district}}} || {{{neighbourhood}}} || {{{state}}} || {{/first}}\n{{{state}}} {{{county}}}\n{{{country}}}\n{{{infos}}}\n"
+	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{house_number}}}, {{{road}}}\n{{{addition}}}\n{{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} || {{{suburb}}} || {{{city_district}}} || {{{neighbourhood}}} || {{{state}}} || {{/first}}\n{{{country}}}\n{{{infos}}}\n"
 };
 var CF$3 = {
-	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{road}}} {{{house_number}}}\n{{{addition}}}\n{{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} || {{{municipality}}} || {{{county}}} || {{{state_district}}} || {{{state}}} || {{/first}}\n{{{state}}} {{{county}}}\n{{{country}}}\n{{{infos}}}\n"
+	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{road}}} {{{house_number}}}\n{{{addition}}}\n{{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} || {{{municipality}}} || {{{county}}} || {{{state_district}}} || {{{state}}} || {{/first}}\n{{{country}}}\n{{{infos}}}\n"
 };
 var CG$2 = {
-	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{house_number}}}, {{{road}}}\n{{{addition}}}\n{{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} || {{{suburb}}} || {{{city_district}}} || {{{neighbourhood}}} || {{{state}}} || {{/first}}\n{{{state}}} {{{county}}}\n{{{country}}}\n{{{infos}}}\n"
+	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{house_number}}}, {{{road}}}\n{{{addition}}}\n{{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} || {{{suburb}}} || {{{city_district}}} || {{{neighbourhood}}} || {{{state}}} || {{/first}}\n{{{country}}}\n{{{infos}}}\n"
 };
 var CH$3 = {
-	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{road}}} {{{house_number}}}\n{{{addition}}}\n{{{postcode}}} {{#first}} {{{postal_city}}} || {{{town}}} || {{{city}}} || {{{municipality}}} || {{{village}}} || {{{hamlet}}} || {{{county}}} || {{{state}}} || {{/first}}\n{{{state}}} {{{county}}}\n{{{country}}}\n{{{infos}}}\n",
+	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{road}}} {{{house_number}}}\n{{{addition}}}\n{{{postcode}}} {{#first}} {{{postal_city}}} || {{{town}}} || {{{city}}} || {{{municipality}}} || {{{village}}} || {{{hamlet}}} || {{{county}}} || {{{state}}} || {{/first}}\n{{{country}}}\n{{{infos}}}\n",
 	replace: [
 		[
 			"Verwaltungskreis",
@@ -1002,28 +1002,28 @@ var CH$3 = {
 	]
 };
 var CI$3 = {
-	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{house_number}}} {{{road}}}\n{{{addition}}}\n{{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} || {{{municipality}}} || {{{county}}} || {{{state_district}}} || {{{state}}} || {{/first}}\n{{{state}}} {{{county}}}\n{{{country}}}\n{{{infos}}}\n"
+	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{house_number}}} {{{road}}}\n{{{addition}}}\n{{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} || {{{municipality}}} || {{{county}}} || {{{state_district}}} || {{{state}}} || {{/first}}\n{{{country}}}\n{{{infos}}}\n"
 };
 var CK$2 = {
-	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{house_number}}} {{{road}}}\n{{{addition}}}\n{{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} || {{{municipality}}} || {{{county}}} || {{{state_district}}} || {{{state}}} || {{/first}}\n{{{state}}} {{{county}}}\n{{{country}}}\n{{{infos}}}\n"
+	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{house_number}}} {{{road}}}\n{{{addition}}}\n{{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} || {{{municipality}}} || {{{county}}} || {{{state_district}}} || {{{state}}} || {{/first}}\n{{{country}}}\n{{{infos}}}\n"
 };
 var CL$3 = {
-	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{road}}} {{{house_number}}}\n{{{addition}}}\n{{{postcode}}} {{#first}} {{{postal_city}}} || {{{town}}} || {{{city}}} || {{{village}}} || {{{municipality}}} || {{{hamlet}}} || {{{county}}} || {{{state}}} || {{/first}}\n{{{region}}}\n{{{state}}} {{{county}}}\n{{{country}}}\n{{{infos}}}\n"
+	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{road}}} {{{house_number}}}\n{{{addition}}}\n{{{postcode}}} {{#first}} {{{postal_city}}} || {{{town}}} || {{{city}}} || {{{village}}} || {{{municipality}}} || {{{hamlet}}} || {{{county}}} || {{{state}}} || {{/first}}\n{{{region}}}\n{{{country}}}\n{{{infos}}}\n"
 };
 var CM$3 = {
-	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{road}}} {{{house_number}}}\n{{{addition}}}\n{{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} || {{{municipality}}} || {{{county}}} || {{{state_district}}} || {{{state}}} || {{/first}}\n{{{state}}} {{{county}}}\n{{{country}}}\n{{{infos}}}\n"
+	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{road}}} {{{house_number}}}\n{{{addition}}}\n{{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} || {{{municipality}}} || {{{county}}} || {{{state_district}}} || {{{state}}} || {{/first}}\n{{{country}}}\n{{{infos}}}\n"
 };
 var CN$2 = {
 	address_template: "{{{postcode}}} {{{country}}}\n{{{infos}}}\n{{#first}} {{{state_code}}} || {{{state}}} || {{{state_district}}} || {{{region}}}{{/first}}\n{{{county}}}\n{{#first}}{{{city}}} || {{{town}}} || {{{municipality}}}|| {{{village}}}|| {{{hamlet}}}{{/first}}\n{{#first}} {{{suburb}}} || {{{city_district}}} || {{{neighbourhood}}} {{/first}}\n{{{road}}} {{{house_number}}}\n{{{addition}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{attention}}}\n"
 };
 var CN_en = {
-	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{house_number}}} {{{road}}}\n{{{addition}}}\n{{#first}} {{{suburb}}} || {{{city_district}}} || {{{neighbourhood}}} {{/first}}\n{{{county}}}\n{{#first}}{{{city}}} || {{{town}}} || {{{municipality}}}|| {{{village}}}|| {{{hamlet}}}{{/first}}\n{{#first}} {{{state_code}}} || {{{state}}} || {{{state_district}}} || {{{region}}}{{/first}}\n{{{state}}} {{{county}}}\n{{{country}}} {{{postcode}}}\n"
+	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{house_number}}} {{{road}}}\n{{{addition}}}\n{{#first}} {{{suburb}}} || {{{city_district}}} || {{{neighbourhood}}} {{/first}}\n{{{county}}}\n{{#first}}{{{city}}} || {{{town}}} || {{{municipality}}}|| {{{village}}}|| {{{hamlet}}}{{/first}}\n{{#first}} {{{state_code}}} || {{{state}}} || {{{state_district}}} || {{{region}}}{{/first}}\n{{{country}}} {{{postcode}}}\n"
 };
 var CN_zh = {
 	address_template: "{{{postcode}}} {{{country}}}\n{{{infos}}}\n{{#first}} {{{state_code}}} || {{{state}}} || {{{state_district}}} || {{{region}}}{{/first}}\n{{{county}}}\n{{#first}}{{{city}}} || {{{town}}} || {{{municipality}}}|| {{{village}}}|| {{{hamlet}}}{{/first}}\n{{#first}} {{{suburb}}} || {{{city_district}}} || {{{neighbourhood}}} {{/first}}\n{{{road}}} {{{house_number}}}\n{{{addition}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{attention}}}\n"
 };
 var CO$3 = {
-	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{road}}} {{{house_number}}}\n{{{addition}}}\n{{#first}} {{{suburb}}} || {{{city_district}}} || {{{neighbourhood}}} {{/first}}\n{{{postcode}}} {{#first}} {{{city}}} || {{{town}}} || {{{state_district}}} || {{{village}}} || {{{hamlet}}} {{/first}}, {{#first}} {{{state_code}}} || {{{state}}} || {{/first}}\n{{{state}}} {{{county}}}\n{{{country}}}\n{{{infos}}}\n",
+	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{road}}} {{{house_number}}}\n{{{addition}}}\n{{#first}} {{{suburb}}} || {{{city_district}}} || {{{neighbourhood}}} {{/first}}\n{{{postcode}}} {{#first}} {{{city}}} || {{{town}}} || {{{state_district}}} || {{{village}}} || {{{hamlet}}} {{/first}}, {{#first}} {{{state_code}}} || {{{state}}} || {{/first}}\n{{{country}}}\n{{{infos}}}\n",
 	postformat_replace: [
 		[
 			"Localidad ",
@@ -1047,10 +1047,10 @@ var CR$3 = {
 	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{road}}} {{{house_number}}}\n{{{addition}}}\n{{{state}}}, {{#first}} {{{city}}} || {{{town}}} || {{{state_district}}} || {{{village}}} || {{{hamlet}}} {{/first}}, {{#first}} {{{suburb}}} || {{{city_district}}} || {{{neighbourhood}}} {{/first}}\n{{{postcode}}} {{{country}}}\n{{{infos}}}\n"
 };
 var CU$2 = {
-	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{road}}} {{{house_number}}}\n{{{addition}}}\n{{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} {{{state}}}{{/first}}, {{{postcode}}}\n{{{state}}} {{{county}}}\n{{{country}}}\n{{{infos}}}\n"
+	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{road}}} {{{house_number}}}\n{{{addition}}}\n{{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} {{{state}}}{{/first}}, {{{postcode}}}\n{{{country}}}\n{{{infos}}}\n"
 };
 var CV$3 = {
-	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{#first}} {{{road}}} || {{{place}}} || {{{hamlet}}} {{/first}} {{{house_number}}}\n{{{addition}}}\n{{{postcode}}} {{#first}} {{{postal_city}}} || {{{town}}} || {{{city}}} || {{{village}}} || {{{municipality}}} || {{{hamlet}}} || {{{county}}} || {{{state}}} || {{/first}}\n{{{archipelago}}}\n{{{state}}} {{{county}}}\n{{{country}}}\n{{{infos}}}\n",
+	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{#first}} {{{road}}} || {{{place}}} || {{{hamlet}}} {{/first}} {{{house_number}}}\n{{{addition}}}\n{{{postcode}}} {{#first}} {{{postal_city}}} || {{{town}}} || {{{city}}} || {{{village}}} || {{{municipality}}} || {{{hamlet}}} || {{{county}}} || {{{state}}} || {{/first}}\n{{{archipelago}}}\n{{{country}}}\n{{{infos}}}\n",
 	postformat_replace: [
 		[
 			"\n(\\d{4}) ([^,]*)\n",
@@ -1059,7 +1059,7 @@ var CV$3 = {
 	]
 };
 var CW$2 = {
-	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{road}}} {{{house_number}}}\n{{{addition}}}\n{{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} || {{{municipality}}} || {{{county}}} || {{{state_district}}} || {{{state}}} || {{/first}}\n{{{state}}} {{{county}}}\n{{{country}}}\n{{{infos}}}\n"
+	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{road}}} {{{house_number}}}\n{{{addition}}}\n{{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} || {{{municipality}}} || {{{county}}} || {{{state_district}}} || {{{state}}} || {{/first}}\n{{{country}}}\n{{{infos}}}\n"
 };
 var CX$2 = {
 	use_country: "AU",
@@ -1067,10 +1067,10 @@ var CX$2 = {
 	change_country: "Australia"
 };
 var CY$2 = {
-	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{#first}} {{{road}}} || {{{place}}} || {{{hamlet}}} {{/first}} {{{house_number}}}\n{{{addition}}}\n{{{postcode}}} {{#first}} {{{postal_city}}} || {{{town}}} || {{{city}}} || {{{village}}} || {{{municipality}}} || {{{hamlet}}} || {{{county}}} || {{{state}}} || {{/first}}\n{{{archipelago}}}\n{{{state}}} {{{county}}}\n{{{country}}}\n{{{infos}}}\n"
+	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{#first}} {{{road}}} || {{{place}}} || {{{hamlet}}} {{/first}} {{{house_number}}}\n{{{addition}}}\n{{{postcode}}} {{#first}} {{{postal_city}}} || {{{town}}} || {{{city}}} || {{{village}}} || {{{municipality}}} || {{{hamlet}}} || {{{county}}} || {{{state}}} || {{/first}}\n{{{archipelago}}}\n{{{country}}}\n{{{infos}}}\n"
 };
 var CZ$2 = {
-	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{#first}} {{{road}}} || {{{place}}} || {{{hamlet}}} {{/first}} {{{house_number}}}\n{{{addition}}}\n{{{postcode}}} {{#first}} {{{postal_city}}} || {{{town}}} || {{{city}}} || {{{village}}} || {{{municipality}}} || {{{hamlet}}} || {{{county}}} || {{{state}}} || {{/first}}\n{{{archipelago}}}\n{{{state}}} {{{county}}}\n{{{country}}}\n{{{infos}}}\n",
+	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{#first}} {{{road}}} || {{{place}}} || {{{hamlet}}} {{/first}} {{{house_number}}}\n{{{addition}}}\n{{{postcode}}} {{#first}} {{{postal_city}}} || {{{town}}} || {{{city}}} || {{{village}}} || {{{municipality}}} || {{{hamlet}}} || {{{county}}} || {{{state}}} || {{/first}}\n{{{archipelago}}}\n{{{country}}}\n{{{infos}}}\n",
 	replace: [
 		[
 			"^Capital City of ",
@@ -1085,8 +1085,8 @@ var CZ$2 = {
 	]
 };
 var DE$4 = {
-	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{#first}} {{{road}}} || {{{place}}} || {{{hamlet}}} {{/first}} {{{house_number}}}\n{{{addition}}}\n{{{postcode}}} {{#first}} {{{village}}} {{{postal_city}}} || {{{town}}} || {{{city}}} || {{{municipality}}} || {{{hamlet}}} || {{{county}}} || {{{state}}} || {{/first}}\n{{{archipelago}}}\n{{{state}}} {{{county}}}\n{{{country}}}\n{{{infos}}}\n",
-	fallback_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{#first}} {{{road}}} || {{{place}}} || {{{hamlet}}} {{/first}} {{{house_number}}}\n{{{addition}}}\n{{#first}} {{{suburb}}} || {{{city_district}}} || {{{neighbourhood}}} {{/first}}\n{{#first}} {{{town}}} || {{{city}}} || {{{village}}} || {{{hamlet}}} || {{{municipality}}} || {{{county}}} || {{/first}}\n{{#first}} || {{{state}}} || {{{state_district}}} {{/first}}\n{{{state}}} {{{county}}}\n{{{country}}}\n{{{infos}}}\n",
+	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{#first}} {{{road}}} || {{{place}}} || {{{hamlet}}} {{/first}} {{{house_number}}}\n{{{addition}}}\n{{{postcode}}} {{#first}} {{{village}}} {{{postal_city}}} || {{{town}}} || {{{city}}} || {{{municipality}}} || {{{hamlet}}} || {{{county}}} || {{{state}}} || {{/first}}\n{{{archipelago}}}\n{{{country}}}\n{{{infos}}}\n",
+	fallback_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{#first}} {{{road}}} || {{{place}}} || {{{hamlet}}} {{/first}} {{{house_number}}}\n{{{addition}}}\n{{#first}} {{{suburb}}} || {{{city_district}}} || {{{neighbourhood}}} {{/first}}\n{{#first}} {{{town}}} || {{{city}}} || {{{village}}} || {{{hamlet}}} || {{{municipality}}} || {{{county}}} || {{/first}}\n{{#first}} || {{{state}}} || {{{state_district}}} {{/first}}\n{{{country}}}\n{{{infos}}}\n",
 	replace: [
 		[
 			"^Stadtteil ",
@@ -1161,7 +1161,7 @@ var DE$4 = {
 	]
 };
 var DJ$3 = {
-	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{house_number}}} {{{road}}}\n{{{addition}}}\n{{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} || {{{municipality}}} || {{{county}}} || {{{state_district}}} || {{{state}}} || {{/first}}\n{{{state}}} {{{county}}}\n{{{country}}}\n{{{infos}}}\n",
+	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{house_number}}} {{{road}}}\n{{{addition}}}\n{{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} || {{{municipality}}} || {{{county}}} || {{{state_district}}} || {{{state}}} || {{/first}}\n{{{country}}}\n{{{infos}}}\n",
 	replace: [
 		[
 			"city=Djibouti",
@@ -1170,7 +1170,7 @@ var DJ$3 = {
 	]
 };
 var DK$2 = {
-	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{#first}} {{{road}}} || {{{place}}} || {{{hamlet}}} {{/first}} {{{house_number}}}\n{{{addition}}}\n{{{postcode}}} {{#first}} {{{postal_city}}} || {{{town}}} || {{{city}}} || {{{village}}} || {{{municipality}}} || {{{hamlet}}} || {{{county}}} || {{{state}}} || {{/first}}\n{{{archipelago}}}\n{{{state}}} {{{county}}}\n{{{country}}}\n{{{infos}}}\n",
+	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{#first}} {{{road}}} || {{{place}}} || {{{hamlet}}} {{/first}} {{{house_number}}}\n{{{addition}}}\n{{{postcode}}} {{#first}} {{{postal_city}}} || {{{town}}} || {{{city}}} || {{{village}}} || {{{municipality}}} || {{{hamlet}}} || {{{county}}} || {{{state}}} || {{/first}}\n{{{archipelago}}}\n{{{country}}}\n{{{infos}}}\n",
 	replace: [
 		[
 			"^Capital Region of ",
@@ -1179,10 +1179,10 @@ var DK$2 = {
 	]
 };
 var DM$2 = {
-	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{house_number}}} {{{road}}}\n{{{addition}}}\n{{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} || {{{municipality}}} || {{{county}}} || {{{state_district}}} || {{{state}}} || {{/first}}\n{{{state}}} {{{county}}}\n{{{country}}}\n{{{infos}}}\n"
+	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{house_number}}} {{{road}}}\n{{{addition}}}\n{{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} || {{{municipality}}} || {{{county}}} || {{{state_district}}} || {{{state}}} || {{/first}}\n{{{country}}}\n{{{infos}}}\n"
 };
 var DO$2 = {
-	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{road}}} {{{house_number}}}\n{{{addition}}}\n{{#first}} {{{suburb}}} || {{{city_district}}} || {{{neighbourhood}}} {{/first}}\n{{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} {{/first}}, {{{state}}}\n{{{postcode}}}\n{{{state}}} {{{county}}}\n{{{country}}}\n{{{infos}}}\n",
+	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{road}}} {{{house_number}}}\n{{{addition}}}\n{{#first}} {{{suburb}}} || {{{city_district}}} || {{{neighbourhood}}} {{/first}}\n{{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} {{/first}}, {{{state}}}\n{{{postcode}}}\n{{{country}}}\n{{{infos}}}\n",
 	postformat_replace: [
 		[
 			", Distrito Nacional",
@@ -1191,26 +1191,26 @@ var DO$2 = {
 	]
 };
 var DZ$2 = {
-	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{house_number}}} {{{road}}}\n{{{addition}}}\n{{{place}}}\n{{{postcode}}} {{#first}} {{{town}}} || {{{village}}} || {{{hamlet}}} || {{{city}}} || {{{municipality}}} || {{{state}}} || {{/first}}\n{{{state}}} {{{county}}}\n{{{country}}}\n{{{infos}}}\n"
+	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{house_number}}} {{{road}}}\n{{{addition}}}\n{{{place}}}\n{{{postcode}}} {{#first}} {{{town}}} || {{{village}}} || {{{hamlet}}} || {{{city}}} || {{{municipality}}} || {{{state}}} || {{/first}}\n{{{country}}}\n{{{infos}}}\n"
 };
 var EC$3 = {
-	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{road}}} {{{house_number}}}\n{{{addition}}}\n{{{postcode}}}\n{{#first}} {{{city}}} || {{{town}}} || {{{state_district}}} || {{{village}}} || {{{hamlet}}} {{/first}}\n{{{state}}} {{{county}}}\n{{{country}}}\n{{{infos}}}\n"
+	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{road}}} {{{house_number}}}\n{{{addition}}}\n{{{postcode}}}\n{{#first}} {{{city}}} || {{{town}}} || {{{state_district}}} || {{{village}}} || {{{hamlet}}} {{/first}}\n{{{country}}}\n{{{infos}}}\n"
 };
 var EG$2 = {
-	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{house_number}}} {{{road}}}\n{{{addition}}}\n{{#first}} {{{suburb}}} || {{{city_district}}} || {{{neighbourhood}}} {{/first}}\n{{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} {{/first}}\n{{{postcode}}}\n{{{state}}} {{{county}}}\n{{{country}}}\n{{{infos}}}\n"
+	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{house_number}}} {{{road}}}\n{{{addition}}}\n{{#first}} {{{suburb}}} || {{{city_district}}} || {{{neighbourhood}}} {{/first}}\n{{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} {{/first}}\n{{{postcode}}}\n{{{country}}}\n{{{infos}}}\n"
 };
 var EE$2 = {
-	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{#first}} {{{road}}} || {{{place}}} || {{{hamlet}}} {{/first}} {{{house_number}}}\n{{{addition}}}\n{{{postcode}}} {{#first}} {{{postal_city}}} || {{{town}}} || {{{city}}} || {{{village}}} || {{{municipality}}} || {{{hamlet}}} || {{{county}}} || {{{state}}} || {{/first}}\n{{{archipelago}}}\n{{{state}}} {{{county}}}\n{{{country}}}\n{{{infos}}}\n"
+	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{#first}} {{{road}}} || {{{place}}} || {{{hamlet}}} {{/first}} {{{house_number}}}\n{{{addition}}}\n{{{postcode}}} {{#first}} {{{postal_city}}} || {{{town}}} || {{{city}}} || {{{village}}} || {{{municipality}}} || {{{hamlet}}} || {{{county}}} || {{{state}}} || {{/first}}\n{{{archipelago}}}\n{{{country}}}\n{{{infos}}}\n"
 };
 var EH$2 = {
-	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{road}}} {{{house_number}}}\n{{{addition}}}\n{{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} || {{{municipality}}} || {{{county}}} || {{{state_district}}} || {{{state}}} || {{/first}}\n{{{state}}} {{{county}}}\n{{{country}}}\n{{{infos}}}\n"
+	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{road}}} {{{house_number}}}\n{{{addition}}}\n{{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} || {{{municipality}}} || {{{county}}} || {{{state_district}}} || {{{state}}} || {{/first}}\n{{{country}}}\n{{{infos}}}\n"
 };
 var ER$3 = {
-	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{road}}} {{{house_number}}}\n{{{addition}}}\n{{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} || {{{municipality}}} || {{{county}}} || {{{state_district}}} || {{{state}}} || {{/first}}\n{{{state}}} {{{county}}}\n{{{country}}}\n{{{infos}}}\n"
+	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{road}}} {{{house_number}}}\n{{{addition}}}\n{{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} || {{{municipality}}} || {{{county}}} || {{{state_district}}} || {{{state}}} || {{/first}}\n{{{country}}}\n{{{infos}}}\n"
 };
 var ES$5 = {
-	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{road}}}, {{{house_number}}}\n{{{addition}}}\n{{{postcode}}} {{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} || {{{municipality}}} || {{{state}}} || {{{county}}} || {{/first}}\n{{{state}}} {{{county}}}\n{{{country}}}\n{{{infos}}}\n",
-	fallback_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{road}}} {{{house_number}}}\n{{{addition}}}\n{{{place}}}\n{{{suburb}}}\n{{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} || {{{municipality}}} || {{{county}}} || {{/first}}\n{{#first}} || {{{state}}} || {{{county}}} || {{/first}}\n{{{state}}} {{{county}}}\n{{{country}}}\n{{{infos}}}\n",
+	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{road}}}, {{{house_number}}}\n{{{addition}}}\n{{{postcode}}} {{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} || {{{municipality}}} || {{{state}}} || {{{county}}} || {{/first}}\n{{{country}}}\n{{{infos}}}\n",
+	fallback_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{road}}} {{{house_number}}}\n{{{addition}}}\n{{{place}}}\n{{{suburb}}}\n{{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} || {{{municipality}}} || {{{county}}} || {{/first}}\n{{#first}} || {{{state}}} || {{{county}}} || {{/first}}\n{{{country}}}\n{{{infos}}}\n",
 	replace: [
 		[
 			"Autonomous Community of the",
@@ -1227,13 +1227,13 @@ var ES$5 = {
 	]
 };
 var ET$3 = {
-	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{#first}} {{{road}}} || {{{place}}} || {{{hamlet}}} {{/first}} {{{house_number}}}\n{{{addition}}}\n{{{postcode}}} {{#first}} {{{postal_city}}} || {{{town}}} || {{{city}}} || {{{village}}} || {{{municipality}}} || {{{hamlet}}} || {{{county}}} || {{{state}}} || {{/first}}\n{{{archipelago}}}\n{{{state}}} {{{county}}}\n{{{country}}}\n{{{infos}}}\n"
+	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{#first}} {{{road}}} || {{{place}}} || {{{hamlet}}} {{/first}} {{{house_number}}}\n{{{addition}}}\n{{{postcode}}} {{#first}} {{{postal_city}}} || {{{town}}} || {{{city}}} || {{{village}}} || {{{municipality}}} || {{{hamlet}}} || {{{county}}} || {{{state}}} || {{/first}}\n{{{archipelago}}}\n{{{country}}}\n{{{infos}}}\n"
 };
 var FI$3 = {
-	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{#first}} {{{road}}} || {{{place}}} || {{{hamlet}}} {{/first}} {{{house_number}}}\n{{{addition}}}\n{{{postcode}}} {{#first}} {{{postal_city}}} || {{{town}}} || {{{city}}} || {{{village}}} || {{{municipality}}} || {{{hamlet}}} || {{{county}}} || {{{state}}} || {{/first}}\n{{{archipelago}}}\n{{{state}}} {{{county}}}\n{{{country}}}\n{{{infos}}}\n"
+	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{#first}} {{{road}}} || {{{place}}} || {{{hamlet}}} {{/first}} {{{house_number}}}\n{{{addition}}}\n{{{postcode}}} {{#first}} {{{postal_city}}} || {{{town}}} || {{{city}}} || {{{village}}} || {{{municipality}}} || {{{hamlet}}} || {{{county}}} || {{{state}}} || {{/first}}\n{{{archipelago}}}\n{{{country}}}\n{{{infos}}}\n"
 };
 var FJ$3 = {
-	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{house_number}}} {{{road}}}\n{{{addition}}}\n{{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} || {{{municipality}}} || {{{county}}} || {{{state_district}}} || {{{state}}} || {{/first}}\n{{{state}}} {{{county}}}\n{{{country}}}\n{{{infos}}}\n"
+	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{house_number}}} {{{road}}}\n{{{addition}}}\n{{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} || {{{municipality}}} || {{{county}}} || {{{state_district}}} || {{{state}}} || {{/first}}\n{{{country}}}\n{{{infos}}}\n"
 };
 var FK$2 = {
 	use_country: "GB",
@@ -1245,7 +1245,7 @@ var FM$3 = {
 	add_component: "state=Micronesia"
 };
 var FO$2 = {
-	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{#first}} {{{road}}} || {{{place}}} || {{{hamlet}}} {{/first}} {{{house_number}}}\n{{{addition}}}\n{{{postcode}}} {{#first}} {{{postal_city}}} || {{{town}}} || {{{city}}} || {{{village}}} || {{{municipality}}} || {{{hamlet}}} || {{{county}}} || {{{state}}} || {{/first}}\n{{{archipelago}}}\n{{{state}}} {{{county}}}\n{{{country}}}\n{{{infos}}}\n",
+	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{#first}} {{{road}}} || {{{place}}} || {{{hamlet}}} {{/first}} {{{house_number}}}\n{{{addition}}}\n{{{postcode}}} {{#first}} {{{postal_city}}} || {{{town}}} || {{{city}}} || {{{village}}} || {{{municipality}}} || {{{hamlet}}} || {{{county}}} || {{{state}}} || {{/first}}\n{{{archipelago}}}\n{{{country}}}\n{{{infos}}}\n",
 	postformat_replace: [
 		[
 			"Territorial waters of Faroe Islands",
@@ -1291,11 +1291,11 @@ var FR$4 = {
 	]
 };
 var GA$2 = {
-	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{house_number}}} {{{road}}}\n{{{addition}}}\n{{#first}} {{{suburb}}} || {{{city_district}}} || {{{neighbourhood}}} || {{{village}}} || {{{hamlet}}} {{/first}}\n{{#first}} {{{city}}} || {{{town}}} || {{{municipality}}} || {{{county}}} || {{{state_district}}} || {{{state}}} || {{/first}}\n{{{state}}} {{{county}}}\n{{{country}}}\n{{{infos}}}\n"
+	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{house_number}}} {{{road}}}\n{{{addition}}}\n{{#first}} {{{suburb}}} || {{{city_district}}} || {{{neighbourhood}}} || {{{village}}} || {{{hamlet}}} {{/first}}\n{{#first}} {{{city}}} || {{{town}}} || {{{municipality}}} || {{{county}}} || {{{state_district}}} || {{{state}}} || {{/first}}\n{{{country}}}\n{{{infos}}}\n"
 };
 var GB$4 = {
 	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{house_number}}} {{{road}}}\n{{{addition}}}\n{{{quarter}}}\n{{#first}} {{{village}}} || {{{town}}} || {{{city}}} || {{{municipality}}} || {{{hamlet}}} || {{{county}}} || {{/first}}\n{{{postcode}}}\n{{#first}} {{{country}}} || {{{state}}} || {{/first}}\n",
-	fallback_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{road}}} {{{house_number}}}\n{{{addition}}}\n{{{place}}}\n{{#first}} {{{suburb}}} || {{{island}}} {{/first}}\n{{#first}} {{{village}}} || {{{hamlet}}} || {{{municipality}}} {{/first}}\n{{#first}} {{{town}}} || {{{city}}}{{/first}}\n{{{county}}}\n{{#first}} || {{{state}}} || {{{state_code}}} {{/first}}\n{{{state}}} {{{county}}}\n{{{country}}}\n{{{infos}}}\n",
+	fallback_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{road}}} {{{house_number}}}\n{{{addition}}}\n{{{place}}}\n{{#first}} {{{suburb}}} || {{{island}}} {{/first}}\n{{#first}} {{{village}}} || {{{hamlet}}} || {{{municipality}}} {{/first}}\n{{#first}} {{{town}}} || {{{city}}}{{/first}}\n{{{county}}}\n{{#first}} || {{{state}}} || {{{state_code}}} {{/first}}\n{{{country}}}\n{{{infos}}}\n",
 	replace: [
 		[
 			"village= CP$",
@@ -1358,10 +1358,10 @@ var GB$4 = {
 	]
 };
 var GD$2 = {
-	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{road}}} {{{house_number}}}\n{{{addition}}}\n{{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} || {{{municipality}}} || {{{county}}} || {{{state_district}}} || {{{state}}} || {{/first}}\n{{{state}}} {{{county}}}\n{{{country}}}\n{{{infos}}}\n"
+	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{road}}} {{{house_number}}}\n{{{addition}}}\n{{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} || {{{municipality}}} || {{{county}}} || {{{state_district}}} || {{{state}}} || {{/first}}\n{{{country}}}\n{{{infos}}}\n"
 };
 var GE$3 = {
-	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{#first}} {{{road}}} || {{{place}}} || {{{hamlet}}} {{/first}} {{{house_number}}}\n{{{addition}}}\n{{{postcode}}} {{#first}} {{{postal_city}}} || {{{town}}} || {{{city}}} || {{{village}}} || {{{municipality}}} || {{{hamlet}}} || {{{county}}} || {{{state}}} || {{/first}}\n{{{archipelago}}}\n{{{state}}} {{{county}}}\n{{{country}}}\n{{{infos}}}\n"
+	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{#first}} {{{road}}} || {{{place}}} || {{{hamlet}}} {{/first}} {{{house_number}}}\n{{{addition}}}\n{{{postcode}}} {{#first}} {{{postal_city}}} || {{{town}}} || {{{city}}} || {{{village}}} || {{{municipality}}} || {{{hamlet}}} || {{{county}}} || {{{state}}} || {{/first}}\n{{{archipelago}}}\n{{{country}}}\n{{{infos}}}\n"
 };
 var GF$2 = {
 	use_country: "FR",
@@ -1372,29 +1372,29 @@ var GG$2 = {
 	change_country: "Guernsey, Channel Islands"
 };
 var GH$3 = {
-	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{house_number}}} {{{road}}}\n{{{addition}}}\n{{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} || {{{municipality}}} || {{{county}}} || {{{state_district}}} || {{{state}}} || {{/first}}\n{{{state}}} {{{county}}}\n{{{country}}}\n{{{infos}}}\n"
+	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{house_number}}} {{{road}}}\n{{{addition}}}\n{{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} || {{{municipality}}} || {{{county}}} || {{{state_district}}} || {{{state}}} || {{/first}}\n{{{country}}}\n{{{infos}}}\n"
 };
 var GI$2 = {
-	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{house_number}}} {{{road}}}\n{{{addition}}}\n{{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} || {{{municipality}}} || {{{county}}} || {{{state_district}}} || {{{state}}} || {{/first}}\n{{{state}}} {{{county}}}\n{{{country}}}\n{{{infos}}}\n"
+	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{house_number}}} {{{road}}}\n{{{addition}}}\n{{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} || {{{municipality}}} || {{{county}}} || {{{state_district}}} || {{{state}}} || {{/first}}\n{{{country}}}\n{{{infos}}}\n"
 };
 var GL$4 = {
-	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{#first}} {{{road}}} || {{{place}}} || {{{hamlet}}} {{/first}} {{{house_number}}}\n{{{addition}}}\n{{{postcode}}} {{#first}} {{{postal_city}}} || {{{town}}} || {{{city}}} || {{{village}}} || {{{municipality}}} || {{{hamlet}}} || {{{county}}} || {{{state}}} || {{/first}}\n{{{archipelago}}}\n{{{state}}} {{{county}}}\n{{{country}}}\n{{{infos}}}\n"
+	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{#first}} {{{road}}} || {{{place}}} || {{{hamlet}}} {{/first}} {{{house_number}}}\n{{{addition}}}\n{{{postcode}}} {{#first}} {{{postal_city}}} || {{{town}}} || {{{city}}} || {{{village}}} || {{{municipality}}} || {{{hamlet}}} || {{{county}}} || {{{state}}} || {{/first}}\n{{{archipelago}}}\n{{{country}}}\n{{{infos}}}\n"
 };
 var GM$3 = {
-	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{house_number}}} {{{road}}}\n{{{addition}}}\n{{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} || {{{municipality}}} || {{{county}}} || {{{state_district}}} || {{{state}}} || {{/first}}\n{{{state}}} {{{county}}}\n{{{country}}}\n{{{infos}}}\n"
+	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{house_number}}} {{{road}}}\n{{{addition}}}\n{{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} || {{{municipality}}} || {{{county}}} || {{{state_district}}} || {{{state}}} || {{/first}}\n{{{country}}}\n{{{infos}}}\n"
 };
 var GN$3 = {
-	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{house_number}}} {{{road}}}\n{{{addition}}}\n{{{postcode}}} {{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} || {{{state_district}}} {{/first}}\n{{{state}}}\n{{{state}}} {{{county}}}\n{{{country}}}\n{{{infos}}}\n"
+	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{house_number}}} {{{road}}}\n{{{addition}}}\n{{{postcode}}} {{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} || {{{state_district}}} {{/first}}\n{{{state}}}\n{{{country}}}\n{{{infos}}}\n"
 };
 var GP$2 = {
 	use_country: "FR",
 	change_country: "Guadeloupe, France"
 };
 var GQ$3 = {
-	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{road}}} {{{house_number}}}\n{{{addition}}}\n{{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} || {{{municipality}}} || {{{county}}} || {{{state_district}}} || {{{state}}} || {{/first}}\n{{{state}}} {{{county}}}\n{{{country}}}\n{{{infos}}}\n"
+	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{road}}} {{{house_number}}}\n{{{addition}}}\n{{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} || {{{municipality}}} || {{{county}}} || {{{state_district}}} || {{{state}}} || {{/first}}\n{{{country}}}\n{{{infos}}}\n"
 };
 var GR$2 = {
-	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{#first}} {{{road}}} || {{{place}}} || {{{hamlet}}} {{/first}} {{{house_number}}}\n{{{addition}}}\n{{{postcode}}} {{#first}} {{{postal_city}}} || {{{town}}} || {{{city}}} || {{{village}}} || {{{municipality}}} || {{{hamlet}}} || {{{county}}} || {{{state}}} || {{/first}}\n{{{archipelago}}}\n{{{state}}} {{{county}}}\n{{{country}}}\n{{{infos}}}\n",
+	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{#first}} {{{road}}} || {{{place}}} || {{{hamlet}}} {{/first}} {{{house_number}}}\n{{{addition}}}\n{{{postcode}}} {{#first}} {{{postal_city}}} || {{{town}}} || {{{city}}} || {{{village}}} || {{{municipality}}} || {{{hamlet}}} || {{{county}}} || {{{state}}} || {{/first}}\n{{{archipelago}}}\n{{{country}}}\n{{{infos}}}\n",
 	replace: [
 		[
 			"Municipal Unit of ",
@@ -1418,7 +1418,7 @@ var GS$2 = {
 	add_component: "county=South Georgia"
 };
 var GT$3 = {
-	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{road}}} {{{house_number}}}\n{{{addition}}}\n{{{postcode}}}-{{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} || {{{municipality}}} || {{{state}}} || {{/first}}\n{{{state}}} {{{county}}}\n{{{country}}}\n{{{infos}}}\n",
+	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{road}}} {{{house_number}}}\n{{{addition}}}\n{{{postcode}}}-{{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} || {{{municipality}}} || {{{state}}} || {{/first}}\n{{{country}}}\n{{{infos}}}\n",
 	postformat_replace: [
 		[
 			"\n(\\d{5})- ",
@@ -1436,16 +1436,16 @@ var GU$2 = {
 	add_component: "state=Guam"
 };
 var GW$3 = {
-	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{#first}} {{{road}}} || {{{place}}} || {{{hamlet}}} {{/first}} {{{house_number}}}\n{{{addition}}}\n{{{postcode}}} {{#first}} {{{postal_city}}} || {{{town}}} || {{{city}}} || {{{village}}} || {{{municipality}}} || {{{hamlet}}} || {{{county}}} || {{{state}}} || {{/first}}\n{{{archipelago}}}\n{{{state}}} {{{county}}}\n{{{country}}}\n{{{infos}}}\n"
+	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{#first}} {{{road}}} || {{{place}}} || {{{hamlet}}} {{/first}} {{{house_number}}}\n{{{addition}}}\n{{{postcode}}} {{#first}} {{{postal_city}}} || {{{town}}} || {{{city}}} || {{{village}}} || {{{municipality}}} || {{{hamlet}}} || {{{county}}} || {{{state}}} || {{/first}}\n{{{archipelago}}}\n{{{country}}}\n{{{infos}}}\n"
 };
 var GY$3 = {
-	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{house_number}}} {{{road}}}\n{{{addition}}}\n{{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} || {{{municipality}}} || {{{county}}} || {{{state_district}}} || {{{state}}} || {{/first}}\n{{{state}}} {{{county}}}\n{{{country}}}\n{{{infos}}}\n"
+	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{house_number}}} {{{road}}}\n{{{addition}}}\n{{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} || {{{municipality}}} || {{{county}}} || {{{state_district}}} || {{{state}}} || {{/first}}\n{{{country}}}\n{{{infos}}}\n"
 };
 var HK$2 = {
 	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{house_number}}} {{{road}}}\n{{{addition}}}\n{{{state_district}}}\n{{#first}} || {{{state}}} || {{{country}}} {{/first}}\n"
 };
 var HK_en = {
-	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{house_number}}} {{{road}}}\n{{{addition}}}\n{{{state_district}}}\n{{{state}}}\n{{{state}}} {{{county}}}\n{{{country}}}\n{{{infos}}}\n"
+	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{house_number}}} {{{road}}}\n{{{addition}}}\n{{{state_district}}}\n{{{state}}}\n{{{country}}}\n{{{infos}}}\n"
 };
 var HK_zh = {
 	address_template: "{{{country}}}\n{{{infos}}}\n{{{state}}}\n{{{state_district}}}\n{{{road}}}\n{{{addition}}}\n{{{house_number}}}\n{{{addition}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{attention}}}\n"
@@ -1456,13 +1456,13 @@ var HM$2 = {
 	add_component: "state=Heard Island and McDonald Islands"
 };
 var HN$3 = {
-	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{#first}} {{{road}}} || {{{place}}} || {{{hamlet}}} {{/first}} {{{house_number}}}\n{{{addition}}}\n{{{postcode}}} {{#first}} {{{postal_city}}} || {{{town}}} || {{{city}}} || {{{village}}} || {{{municipality}}} || {{{hamlet}}} || {{{county}}} || {{{state}}} || {{/first}}\n{{{archipelago}}}\n{{{state}}} {{{county}}}\n{{{country}}}\n{{{infos}}}\n"
+	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{#first}} {{{road}}} || {{{place}}} || {{{hamlet}}} {{/first}} {{{house_number}}}\n{{{addition}}}\n{{{postcode}}} {{#first}} {{{postal_city}}} || {{{town}}} || {{{city}}} || {{{village}}} || {{{municipality}}} || {{{hamlet}}} || {{{county}}} || {{{state}}} || {{/first}}\n{{{archipelago}}}\n{{{country}}}\n{{{infos}}}\n"
 };
 var HR$2 = {
-	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{#first}} {{{road}}} || {{{place}}} || {{{hamlet}}} {{/first}} {{{house_number}}}\n{{{addition}}}\n{{{postcode}}} {{#first}} {{{postal_city}}} || {{{town}}} || {{{city}}} || {{{village}}} || {{{municipality}}} || {{{hamlet}}} || {{{county}}} || {{{state}}} || {{/first}}\n{{{archipelago}}}\n{{{state}}} {{{county}}}\n{{{country}}}\n{{{infos}}}\n"
+	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{#first}} {{{road}}} || {{{place}}} || {{{hamlet}}} {{/first}} {{{house_number}}}\n{{{addition}}}\n{{{postcode}}} {{#first}} {{{postal_city}}} || {{{town}}} || {{{city}}} || {{{village}}} || {{{municipality}}} || {{{hamlet}}} || {{{county}}} || {{{state}}} || {{/first}}\n{{{archipelago}}}\n{{{country}}}\n{{{infos}}}\n"
 };
 var HT$3 = {
-	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{#first}} {{{road}}} || {{{place}}} || {{{hamlet}}} {{/first}} {{{house_number}}}\n{{{addition}}}\n{{{postcode}}} {{#first}} {{{postal_city}}} || {{{town}}} || {{{city}}} || {{{village}}} || {{{municipality}}} || {{{hamlet}}} || {{{county}}} || {{{state}}} || {{/first}}\n{{{archipelago}}}\n{{{state}}} {{{county}}}\n{{{country}}}\n{{{infos}}}\n",
+	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{#first}} {{{road}}} || {{{place}}} || {{{hamlet}}} {{/first}} {{{house_number}}}\n{{{addition}}}\n{{{postcode}}} {{#first}} {{{postal_city}}} || {{{town}}} || {{{city}}} || {{{village}}} || {{{municipality}}} || {{{hamlet}}} || {{{county}}} || {{{state}}} || {{/first}}\n{{{archipelago}}}\n{{{country}}}\n{{{infos}}}\n",
 	postformat_replace: [
 		[
 			" Commune de",
@@ -1471,13 +1471,13 @@ var HT$3 = {
 	]
 };
 var HU$4 = {
-	address_template: "{{{attention}}}\n{{{postcode}}} {{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} {{/first}}\n{{{road}}} {{{house_number}}}.\n{{{state}}} {{{county}}}\n{{{country}}}\n{{{infos}}}\n"
+	address_template: "{{{attention}}}\n{{{postcode}}} {{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} {{/first}}\n{{{road}}} {{{house_number}}}.\n{{{country}}}\n{{{infos}}}\n"
 };
 var ID$3 = {
-	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{road}}} {{{house_number}}}\n{{{addition}}}\n{{#first}} {{{suburb}}} || {{{city_district}}} || {{{neighbourhood}}} {{/first}}\n{{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} {{/first}} {{{postcode}}}\n{{{state}}}\n{{{state}}} {{{county}}}\n{{{country}}}\n{{{infos}}}\n"
+	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{road}}} {{{house_number}}}\n{{{addition}}}\n{{#first}} {{{suburb}}} || {{{city_district}}} || {{{neighbourhood}}} {{/first}}\n{{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} {{/first}} {{{postcode}}}\n{{{state}}}\n{{{country}}}\n{{{infos}}}\n"
 };
 var IE$4 = {
-	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{house_number}}} {{{road}}}\n{{{addition}}}\n{{#first}} {{{suburb}}} || {{{city_district}}} || {{{neighbourhood}}} {{/first}}\n{{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} || {{{municipality}}} {{/first}}\n{{{county}}}\n{{{postcode}}}\n{{{state}}} {{{county}}}\n{{{country}}}\n{{{infos}}}\n",
+	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{house_number}}} {{{road}}}\n{{{addition}}}\n{{#first}} {{{suburb}}} || {{{city_district}}} || {{{neighbourhood}}} {{/first}}\n{{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} || {{{municipality}}} {{/first}}\n{{{county}}}\n{{{postcode}}}\n{{{country}}}\n{{{infos}}}\n",
 	replace: [
 		[
 			" City$",
@@ -1532,35 +1532,35 @@ var IE$4 = {
 	]
 };
 var IL$2 = {
-	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{#first}} {{{road}}} || {{{place}}} || {{{hamlet}}} {{/first}} {{{house_number}}}\n{{{addition}}}\n{{{postcode}}} {{#first}} {{{postal_city}}} || {{{town}}} || {{{city}}} || {{{village}}} || {{{municipality}}} || {{{hamlet}}} || {{{county}}} || {{{state}}} || {{/first}}\n{{{archipelago}}}\n{{{state}}} {{{county}}}\n{{{country}}}\n{{{infos}}}\n"
+	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{#first}} {{{road}}} || {{{place}}} || {{{hamlet}}} {{/first}} {{{house_number}}}\n{{{addition}}}\n{{{postcode}}} {{#first}} {{{postal_city}}} || {{{town}}} || {{{city}}} || {{{village}}} || {{{municipality}}} || {{{hamlet}}} || {{{county}}} || {{{state}}} || {{/first}}\n{{{archipelago}}}\n{{{country}}}\n{{{infos}}}\n"
 };
 var IM$2 = {
 	use_country: "GB"
 };
 var IN$3 = {
-	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{house_number}}}, {{{road}}}\n{{{addition}}}\n{{#first}} {{{suburb}}} || {{{city_district}}} || {{{state_district}}} {{/first}}\n{{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} {{/first}} - {{{postcode}}}\n{{{state}}}\n{{{state}}} {{{county}}}\n{{{country}}}\n{{{infos}}}\n"
+	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{house_number}}}, {{{road}}}\n{{{addition}}}\n{{#first}} {{{suburb}}} || {{{city_district}}} || {{{state_district}}} {{/first}}\n{{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} {{/first}} - {{{postcode}}}\n{{{state}}}\n{{{country}}}\n{{{infos}}}\n"
 };
 var IO$2 = {
 	use_country: "GB",
 	change_country: "British Indian Ocean Territory, United Kingdom"
 };
 var IQ$2 = {
-	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{house_number}}} {{#first}} {{{city_district}}} || {{{neighbourhood}}} || {{{suburb}}} {{/first}}\n{{{road}}}\n{{{addition}}}\n{{#first}} {{{city}}} || {{{town}}} || {{{state}}} || {{{village}}} || {{{hamlet}}} {{/first}}\n{{{postcode}}}\n{{{state}}} {{{county}}}\n{{{country}}}\n{{{infos}}}\n"
+	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{house_number}}} {{#first}} {{{city_district}}} || {{{neighbourhood}}} || {{{suburb}}} {{/first}}\n{{{road}}}\n{{{addition}}}\n{{#first}} {{{city}}} || {{{town}}} || {{{state}}} || {{{village}}} || {{{hamlet}}} {{/first}}\n{{{postcode}}}\n{{{country}}}\n{{{infos}}}\n"
 };
 var IR$2 = {
-	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} {{/first}}\n{{#first}} {{{suburb}}} || {{{city_district}}} || {{{neighbourhood}}} {{/first}}\n{{{road}}}\n{{{addition}}}\n{{{house_number}}}\n{{{addition}}}\n{{#first}}{{{province}}} || {{{state}}} || {{{state_district}}}{{/first}}\n{{{postcode}}}\n{{{state}}} {{{county}}}\n{{{country}}}\n{{{infos}}}\n"
+	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} {{/first}}\n{{#first}} {{{suburb}}} || {{{city_district}}} || {{{neighbourhood}}} {{/first}}\n{{{road}}}\n{{{addition}}}\n{{{house_number}}}\n{{{addition}}}\n{{#first}}{{{province}}} || {{{state}}} || {{{state_district}}}{{/first}}\n{{{postcode}}}\n{{{country}}}\n{{{infos}}}\n"
 };
 var IR_en = {
-	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} {{/first}}\n{{#first}} {{{suburb}}} || {{{city_district}}} || {{{neighbourhood}}} {{/first}}\n{{{road}}}\n{{{addition}}}\n{{{house_number}}}\n{{{addition}}}\n{{#first}}{{{state}}} {{{state_district}}}{{/first}}\n{{{postcode}}}\n{{{state}}} {{{county}}}\n{{{country}}}\n{{{infos}}}\n"
+	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} {{/first}}\n{{#first}} {{{suburb}}} || {{{city_district}}} || {{{neighbourhood}}} {{/first}}\n{{{road}}}\n{{{addition}}}\n{{{house_number}}}\n{{{addition}}}\n{{#first}}{{{state}}} {{{state_district}}}{{/first}}\n{{{postcode}}}\n{{{country}}}\n{{{infos}}}\n"
 };
 var IR_fa = {
 	address_template: "{{{country}}}\n{{{infos}}}\n{{{state}}}\n{{{state_district}}}\n{{#first}} || {{{state}}} || {{{province}}} {{/first}}\n{{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} {{/first}}\n{{#first}} {{{suburb}}} || {{{city_district}}} || {{{neighbourhood}}} {{/first}}\n{{{road}}}\n{{{addition}}}\n{{{house_number}}}\n{{{addition}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{attention}}}\n{{{postcode}}}\n"
 };
 var IS$2 = {
-	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{#first}} {{{road}}} || {{{place}}} || {{{hamlet}}} {{/first}} {{{house_number}}}\n{{{addition}}}\n{{{postcode}}} {{#first}} {{{postal_city}}} || {{{town}}} || {{{city}}} || {{{village}}} || {{{municipality}}} || {{{hamlet}}} || {{{county}}} || {{{state}}} || {{/first}}\n{{{archipelago}}}\n{{{state}}} {{{county}}}\n{{{country}}}\n{{{infos}}}\n"
+	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{#first}} {{{road}}} || {{{place}}} || {{{hamlet}}} {{/first}} {{{house_number}}}\n{{{addition}}}\n{{{postcode}}} {{#first}} {{{postal_city}}} || {{{town}}} || {{{city}}} || {{{village}}} || {{{municipality}}} || {{{hamlet}}} || {{{county}}} || {{{state}}} || {{/first}}\n{{{archipelago}}}\n{{{country}}}\n{{{infos}}}\n"
 };
 var IT$5 = {
-	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{road}}} {{{house_number}}}\n{{{addition}}}\n{{{postcode}}} {{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} || {{{municipality}}} {{/first}} {{#first}} {{{county_code}}} || {{{county}}} || {{/first}}\n{{{state}}} {{{county}}}\n{{{country}}}\n{{{infos}}}\n",
+	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{road}}} {{{house_number}}}\n{{{addition}}}\n{{{postcode}}} {{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} || {{{municipality}}} {{/first}} {{#first}} {{{county_code}}} || {{{county}}} || {{/first}}\n{{{country}}}\n{{{infos}}}\n",
 	replace: [
 		[
 			"Città metropolitana di ",
@@ -1591,10 +1591,10 @@ var JE$2 = {
 	change_country: "Jersey, Channel Islands"
 };
 var JM$2 = {
-	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{house_number}}} {{{road}}}\n{{{addition}}}\n{{#first}} {{{suburb}}} || {{{city_district}}} || {{{neighbourhood}}} {{/first}}\n{{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} {{/first}} {{{postcode}}}\n{{{state}}} {{{county}}}\n{{{country}}}\n{{{infos}}}\n"
+	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{house_number}}} {{{road}}}\n{{{addition}}}\n{{#first}} {{{suburb}}} || {{{city_district}}} || {{{neighbourhood}}} {{/first}}\n{{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} {{/first}} {{{postcode}}}\n{{{country}}}\n{{{infos}}}\n"
 };
 var JO$3 = {
-	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{#first}} {{{road}}} || {{{place}}} || {{{hamlet}}} {{/first}} {{{house_number}}}\n{{{addition}}}\n{{{postcode}}} {{#first}} {{{postal_city}}} || {{{town}}} || {{{city}}} || {{{village}}} || {{{municipality}}} || {{{hamlet}}} || {{{county}}} || {{{state}}} || {{/first}}\n{{{archipelago}}}\n{{{state}}} {{{county}}}\n{{{country}}}\n{{{infos}}}\n"
+	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{#first}} {{{road}}} || {{{place}}} || {{{hamlet}}} {{/first}} {{{house_number}}}\n{{{addition}}}\n{{{postcode}}} {{#first}} {{{postal_city}}} || {{{town}}} || {{{city}}} || {{{village}}} || {{{municipality}}} || {{{hamlet}}} || {{{county}}} || {{{state}}} || {{/first}}\n{{{archipelago}}}\n{{{country}}}\n{{{infos}}}\n"
 };
 var JP$2 = {
 	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{house_number}}} {{{road}}}\n{{{addition}}}\n{{#first}} {{{suburb}}} || {{{city_district}}} || {{{neighbourhood}}} {{/first}}\n{{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} {{/first}}, {{#first}} || {{{state}}} || {{{state_district}}} {{/first}} {{{postcode}}}\n{{{county}}}\n{{{country}}}\n{{{infos}}}\n",
@@ -1624,37 +1624,37 @@ var JP_ja = {
 	]
 };
 var KE$2 = {
-	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{house_number}}} {{{road}}}\n{{{addition}}}\n{{#first}} {{{city}}} || {{{town}}} || {{{state}}} || {{{village}}} || {{{hamlet}}} {{/first}}\n{{{postcode}}}\n{{{state}}} {{{county}}}\n{{{country}}}\n{{{infos}}}\n"
+	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{house_number}}} {{{road}}}\n{{{addition}}}\n{{#first}} {{{city}}} || {{{town}}} || {{{state}}} || {{{village}}} || {{{hamlet}}} {{/first}}\n{{{postcode}}}\n{{{country}}}\n{{{infos}}}\n"
 };
 var KG$3 = {
 	address_template: "{{{country}}}\n{{{infos}}}\n{{{state}}}\n{{{postcode}}} {{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} {{/first}}\n{{{suburb}}}\n{{{road}}}, {{{house_number}}}\n{{{addition}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{attention}}}\n"
 };
 var KH$2 = {
-	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{house_number}}} {{{road}}}\n{{{addition}}}\n{{#first}} {{{suburb}}} || {{{city_district}}} || {{{neighbourhood}}} {{/first}}\n{{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} {{/first}} {{{postcode}}}\n{{{state}}} {{{county}}}\n{{{country}}}\n{{{infos}}}\n"
+	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{house_number}}} {{{road}}}\n{{{addition}}}\n{{#first}} {{{suburb}}} || {{{city_district}}} || {{{neighbourhood}}} {{/first}}\n{{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} {{/first}} {{{postcode}}}\n{{{country}}}\n{{{infos}}}\n"
 };
 var KI$3 = {
-	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{road}}} {{{house_number}}}\n{{{addition}}}\n{{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} || {{{municipality}}} || {{{county}}} || {{{state_district}}} || {{{state}}} || {{/first}}\n{{{state}}} {{{county}}}\n{{{country}}}\n{{{infos}}}\n"
+	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{road}}} {{{house_number}}}\n{{{addition}}}\n{{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} || {{{municipality}}} || {{{county}}} || {{{state_district}}} || {{{state}}} || {{/first}}\n{{{country}}}\n{{{infos}}}\n"
 };
 var KM$3 = {
-	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{road}}} {{{house_number}}}\n{{{addition}}}\n{{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} {{/first}}\n{{#first}} {{{suburb}}} || {{{city_district}}} || {{{neighbourhood}}} {{/first}}\n{{{state}}} {{{county}}}\n{{{country}}}\n{{{infos}}}\n"
+	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{road}}} {{{house_number}}}\n{{{addition}}}\n{{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} {{/first}}\n{{#first}} {{{suburb}}} || {{{city_district}}} || {{{neighbourhood}}} {{/first}}\n{{{country}}}\n{{{infos}}}\n"
 };
 var KN$3 = {
 	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{house_number}}} {{{road}}}\n{{{addition}}}\n{{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} {{/first}}, {{#first}} || {{{state}}} || {{{island}}} {{/first}}\n{{{county}}}\n{{{country}}}\n{{{infos}}}\n"
 };
 var KP$2 = {
-	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{road}}} {{{house_number}}}\n{{{addition}}}\n{{#first}} {{{suburb}}} || {{{city_district}}} || {{{neighbourhood}}} {{/first}}\n{{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} || {{{state}}} || {{/first}}\n{{{state}}} {{{county}}}\n{{{country}}}\n{{{infos}}}\n"
+	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{road}}} {{{house_number}}}\n{{{addition}}}\n{{#first}} {{{suburb}}} || {{{city_district}}} || {{{neighbourhood}}} {{/first}}\n{{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} || {{{state}}} || {{/first}}\n{{{country}}}\n{{{infos}}}\n"
 };
 var KR$2 = {
 	address_template: "{{{country}}}\n{{{infos}}}\n{{{state}}}\n{{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} {{/first}}, {{#first}} {{{suburb}}} || {{{city_district}}} || {{{neighbourhood}}} {{/first}}, {{{road}}} {{{house_number}}}\n{{{addition}}}\n{{{attention}}}\n{{{postcode}}}\n"
 };
 var KR_en = {
-	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{house_number}}} {{{road}}}\n{{{addition}}}\n{{#first}} {{{suburb}}} || {{{city_district}}} || {{{neighbourhood}}} {{/first}}, {{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} {{/first}} {{{postcode}}}\n{{{state}}}\n{{{state}}} {{{county}}}\n{{{country}}}\n{{{infos}}}\n"
+	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{house_number}}} {{{road}}}\n{{{addition}}}\n{{#first}} {{{suburb}}} || {{{city_district}}} || {{{neighbourhood}}} {{/first}}, {{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} {{/first}} {{{postcode}}}\n{{{state}}}\n{{{country}}}\n{{{infos}}}\n"
 };
 var KR_ko = {
 	address_template: "{{{country}}}\n{{{infos}}}\n{{{state}}}\n{{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} {{/first}}, {{#first}} {{{suburb}}} || {{{city_district}}} || {{{neighbourhood}}} {{/first}}, {{{road}}} {{{house_number}}}\n{{{addition}}}\n{{{attention}}}\n{{{postcode}}}\n"
 };
 var KW$3 = {
-	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{#first}} {{{suburb}}} || {{{city_district}}} || {{{neighbourhood}}} {{/first}}\n\n{{{road}}}\n{{{addition}}}\n{{{house_number}}} {{{house}}}\n{{{floor}}} {{{door}}}\n{{{postcode}}} {{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} {{/first}}\n{{{state}}} {{{county}}}\n{{{country}}}\n{{{infos}}}\n"
+	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{#first}} {{{suburb}}} || {{{city_district}}} || {{{neighbourhood}}} {{/first}}\n\n{{{road}}}\n{{{addition}}}\n{{{house_number}}} {{{house}}}\n{{{floor}}} {{{door}}}\n{{{postcode}}} {{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} {{/first}}\n{{{country}}}\n{{{infos}}}\n"
 };
 var KY$2 = {
 	address_template: "{{{attention}}}\n{{#first}} {{{house}}}, {{{quarter}}} || {{{house}}} {{/first}}\n{{{house_number}}} {{{road}}}\n{{{addition}}}\n{{#first}} {{{village}}} || {{{town}}} || {{{city}}} || {{{municipality}}} || {{{hamlet}}} || {{{county}}} || {{/first}} {{{postcode}}}\n{{#first}} {{{country}}} || {{{state}}} || {{/first}}\n"
@@ -1663,7 +1663,7 @@ var KZ$3 = {
 	address_template: "{{{country}}}\n{{{infos}}}\n{{{state}}}\n{{{postcode}}} {{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} {{/first}}\n{{{suburb}}}\n{{{road}}}, {{{house_number}}}\n{{{addition}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{attention}}}\n"
 };
 var LA$3 = {
-	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{house_number}}}, {{{road}}}\n{{{addition}}}\n{{{postcode}}} {{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} || {{{state}}} || {{/first}}\n{{{state}}} {{{county}}}\n{{{country}}}\n{{{infos}}}\n"
+	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{house_number}}}, {{{road}}}\n{{{addition}}}\n{{{postcode}}} {{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} || {{{state}}} || {{/first}}\n{{{country}}}\n{{{infos}}}\n"
 };
 var LB$3 = {
 	address_template: "{{{attention}}}\n{{#first}} {{{house}}}, {{{quarter}}} || {{{house}}} {{/first}}\n{{{house_number}}} {{{road}}}\n{{{addition}}}\n{{#first}} {{{village}}} || {{{town}}} || {{{city}}} || {{{municipality}}} || {{{hamlet}}} || {{{county}}} || {{/first}} {{{postcode}}}\n{{#first}} {{{country}}} || {{{state}}} || {{/first}}\n",
@@ -1675,43 +1675,43 @@ var LB$3 = {
 	]
 };
 var LC$2 = {
-	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{road}}} {{{house_number}}}\n{{{addition}}}\n{{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} || {{{municipality}}} || {{{county}}} || {{{state_district}}} || {{{state}}} || {{/first}}\n{{{state}}} {{{county}}}\n{{{country}}}\n{{{infos}}}\n"
+	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{road}}} {{{house_number}}}\n{{{addition}}}\n{{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} || {{{municipality}}} || {{{county}}} || {{{state_district}}} || {{{state}}} || {{/first}}\n{{{country}}}\n{{{infos}}}\n"
 };
 var LI$2 = {
 	use_country: "CH"
 };
 var LK$2 = {
-	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{house_number}}} {{{road}}}\n{{{addition}}}\n{{#first}} {{{suburb}}} || {{{city_district}}} || {{{neighbourhood}}} {{/first}}\n{{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} {{/first}} {{{postcode}}}\n{{{state}}} {{{county}}}\n{{{country}}}\n{{{infos}}}\n"
+	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{house_number}}} {{{road}}}\n{{{addition}}}\n{{#first}} {{{suburb}}} || {{{city_district}}} || {{{neighbourhood}}} {{/first}}\n{{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} {{/first}} {{{postcode}}}\n{{{country}}}\n{{{infos}}}\n"
 };
 var LR$3 = {
-	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{#first}} {{{road}}} || {{{place}}} || {{{hamlet}}} {{/first}} {{{house_number}}}\n{{{addition}}}\n{{{postcode}}} {{#first}} {{{postal_city}}} || {{{town}}} || {{{city}}} || {{{village}}} || {{{municipality}}} || {{{hamlet}}} || {{{county}}} || {{{state}}} || {{/first}}\n{{{archipelago}}}\n{{{state}}} {{{county}}}\n{{{country}}}\n{{{infos}}}\n"
+	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{#first}} {{{road}}} || {{{place}}} || {{{hamlet}}} {{/first}} {{{house_number}}}\n{{{addition}}}\n{{{postcode}}} {{#first}} {{{postal_city}}} || {{{town}}} || {{{city}}} || {{{village}}} || {{{municipality}}} || {{{hamlet}}} || {{{county}}} || {{{state}}} || {{/first}}\n{{{archipelago}}}\n{{{country}}}\n{{{infos}}}\n"
 };
 var LS$3 = {
 	address_template: "{{{attention}}}\n{{#first}} {{{house}}}, {{{quarter}}} || {{{house}}} {{/first}}\n{{{house_number}}} {{{road}}}\n{{{addition}}}\n{{#first}} {{{village}}} || {{{town}}} || {{{city}}} || {{{municipality}}} || {{{hamlet}}} || {{{county}}} || {{/first}} {{{postcode}}}\n{{#first}} {{{country}}} || {{{state}}} || {{/first}}\n"
 };
 var LT$3 = {
-	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{#first}} {{{road}}} || {{{place}}} || {{{hamlet}}} {{/first}} {{{house_number}}}\n{{{addition}}}\n{{{postcode}}} {{#first}} {{{postal_city}}} || {{{town}}} || {{{city}}} || {{{village}}} || {{{municipality}}} || {{{hamlet}}} || {{{county}}} || {{{state}}} || {{/first}}\n{{{archipelago}}}\n{{{state}}} {{{county}}}\n{{{country}}}\n{{{infos}}}\n"
+	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{#first}} {{{road}}} || {{{place}}} || {{{hamlet}}} {{/first}} {{{house_number}}}\n{{{addition}}}\n{{{postcode}}} {{#first}} {{{postal_city}}} || {{{town}}} || {{{city}}} || {{{village}}} || {{{municipality}}} || {{{hamlet}}} || {{{county}}} || {{{state}}} || {{/first}}\n{{{archipelago}}}\n{{{country}}}\n{{{infos}}}\n"
 };
 var LU$3 = {
-	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{house_number}}} {{{road}}}\n{{{addition}}}\n{{{place}}}\n{{{postcode}}} {{#first}} {{{town}}} || {{{village}}} || {{{hamlet}}} || {{{city}}} || {{{municipality}}} || {{{state}}} || {{/first}}\n{{{state}}} {{{county}}}\n{{{country}}}\n{{{infos}}}\n"
+	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{house_number}}} {{{road}}}\n{{{addition}}}\n{{{place}}}\n{{{postcode}}} {{#first}} {{{town}}} || {{{village}}} || {{{hamlet}}} || {{{city}}} || {{{municipality}}} || {{{state}}} || {{/first}}\n{{{country}}}\n{{{infos}}}\n"
 };
 var LV$2 = {
-	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{road}}} {{{house_number}}}\n{{{addition}}}\n{{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} {{{state}}}{{/first}}, {{{postcode}}}\n{{{state}}} {{{county}}}\n{{{country}}}\n{{{infos}}}\n"
+	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{road}}} {{{house_number}}}\n{{{addition}}}\n{{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} {{{state}}}{{/first}}, {{{postcode}}}\n{{{country}}}\n{{{infos}}}\n"
 };
 var LY$3 = {
-	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{road}}} {{{house_number}}}\n{{{addition}}}\n{{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} || {{{municipality}}} || {{{county}}} || {{{state_district}}} || {{{state}}} || {{/first}}\n{{{state}}} {{{county}}}\n{{{country}}}\n{{{infos}}}\n"
+	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{road}}} {{{house_number}}}\n{{{addition}}}\n{{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} || {{{municipality}}} || {{{county}}} || {{{state_district}}} || {{{state}}} || {{/first}}\n{{{country}}}\n{{{infos}}}\n"
 };
 var MA$2 = {
-	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{house_number}}} {{{road}}}\n{{{addition}}}\n{{{place}}}\n{{{postcode}}} {{#first}} {{{town}}} || {{{village}}} || {{{hamlet}}} || {{{city}}} || {{{municipality}}} || {{{state}}} || {{/first}}\n{{{state}}} {{{county}}}\n{{{country}}}\n{{{infos}}}\n"
+	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{house_number}}} {{{road}}}\n{{{addition}}}\n{{{place}}}\n{{{postcode}}} {{#first}} {{{town}}} || {{{village}}} || {{{hamlet}}} || {{{city}}} || {{{municipality}}} || {{{state}}} || {{/first}}\n{{{country}}}\n{{{infos}}}\n"
 };
 var MC$2 = {
-	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{house_number}}} {{{road}}}\n{{{addition}}}\n{{{place}}}\n{{{postcode}}} {{#first}} {{{town}}} || {{{village}}} || {{{hamlet}}} || {{{city}}} || {{{municipality}}} || {{{state}}} || {{/first}}\n{{{state}}} {{{county}}}\n{{{country}}}\n{{{infos}}}\n"
+	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{house_number}}} {{{road}}}\n{{{addition}}}\n{{{place}}}\n{{{postcode}}} {{#first}} {{{town}}} || {{{village}}} || {{{hamlet}}} || {{{city}}} || {{{municipality}}} || {{{state}}} || {{/first}}\n{{{country}}}\n{{{infos}}}\n"
 };
 var MD$3 = {
-	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{road}}}, {{{house_number}}}\n{{{addition}}}\n{{{postcode}}} {{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} || {{{state}}} || {{/first}}\n{{{state}}} {{{county}}}\n{{{country}}}\n{{{infos}}}\n"
+	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{road}}}, {{{house_number}}}\n{{{addition}}}\n{{{postcode}}} {{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} || {{{state}}} || {{/first}}\n{{{country}}}\n{{{infos}}}\n"
 };
 var ME$2 = {
-	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{#first}} {{{road}}} || {{{place}}} || {{{hamlet}}} {{/first}} {{{house_number}}}\n{{{addition}}}\n{{{postcode}}} {{#first}} {{{postal_city}}} || {{{town}}} || {{{city}}} || {{{village}}} || {{{municipality}}} || {{{hamlet}}} || {{{county}}} || {{{state}}} || {{/first}}\n{{{archipelago}}}\n{{{state}}} {{{county}}}\n{{{country}}}\n{{{infos}}}\n"
+	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{#first}} {{{road}}} || {{{place}}} || {{{hamlet}}} {{/first}} {{{house_number}}}\n{{{addition}}}\n{{{postcode}}} {{#first}} {{{postal_city}}} || {{{town}}} || {{{city}}} || {{{village}}} || {{{municipality}}} || {{{hamlet}}} || {{{county}}} || {{{state}}} || {{/first}}\n{{{archipelago}}}\n{{{country}}}\n{{{infos}}}\n"
 };
 var MF$2 = {
 	use_country: "FR",
@@ -1722,25 +1722,25 @@ var MH$2 = {
 	add_component: "state=Marshall Islands"
 };
 var MG$3 = {
-	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{house_number}}} {{{road}}}\n{{{addition}}}\n{{#first}} {{{suburb}}} || {{{city_district}}} || {{{neighbourhood}}} {{/first}}\n{{{postcode}}} {{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} {{/first}}\n{{{state}}} {{{county}}}\n{{{country}}}\n{{{infos}}}\n"
+	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{house_number}}} {{{road}}}\n{{{addition}}}\n{{#first}} {{{suburb}}} || {{{city_district}}} || {{{neighbourhood}}} {{/first}}\n{{{postcode}}} {{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} {{/first}}\n{{{country}}}\n{{{infos}}}\n"
 };
 var MK$2 = {
-	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{#first}} {{{road}}} || {{{place}}} || {{{hamlet}}} {{/first}} {{{house_number}}}\n{{{addition}}}\n{{{postcode}}} {{#first}} {{{postal_city}}} || {{{town}}} || {{{city}}} || {{{village}}} || {{{municipality}}} || {{{hamlet}}} || {{{county}}} || {{{state}}} || {{/first}}\n{{{archipelago}}}\n{{{state}}} {{{county}}}\n{{{country}}}\n{{{infos}}}\n"
+	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{#first}} {{{road}}} || {{{place}}} || {{{hamlet}}} {{/first}} {{{house_number}}}\n{{{addition}}}\n{{{postcode}}} {{#first}} {{{postal_city}}} || {{{town}}} || {{{city}}} || {{{village}}} || {{{municipality}}} || {{{hamlet}}} || {{{county}}} || {{{state}}} || {{/first}}\n{{{archipelago}}}\n{{{country}}}\n{{{infos}}}\n"
 };
 var ML$2 = {
-	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{road}}} {{{house_number}}}\n{{{addition}}}\n{{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} || {{{municipality}}} || {{{county}}} || {{{state_district}}} || {{{state}}} || {{/first}}\n{{{state}}} {{{county}}}\n{{{country}}}\n{{{infos}}}\n"
+	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{road}}} {{{house_number}}}\n{{{addition}}}\n{{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} || {{{municipality}}} || {{{county}}} || {{{state_district}}} || {{{state}}} || {{/first}}\n{{{country}}}\n{{{infos}}}\n"
 };
 var MM$2 = {
-	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{house_number}}} {{{road}}}\n{{{addition}}}\n{{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} || {{{state}}} || {{/first}}, {{{postcode}}}\n{{{state}}} {{{county}}}\n{{{country}}}\n{{{infos}}}\n"
+	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{house_number}}} {{{road}}}\n{{{addition}}}\n{{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} || {{{state}}} || {{/first}}, {{{postcode}}}\n{{{country}}}\n{{{infos}}}\n"
 };
 var MN$2 = {
-	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{city_district}}}\n{{#first}} {{{suburb}}} || {{{neighbourhood}}} {{/first}}\n{{{road}}}\n{{{addition}}}\n{{{house_number}}}\n{{{addition}}}\n{{{postcode}}}\n{{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} {{/first}}\n{{{state}}} {{{county}}}\n{{{country}}}\n{{{infos}}}\n"
+	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{city_district}}}\n{{#first}} {{{suburb}}} || {{{neighbourhood}}} {{/first}}\n{{{road}}}\n{{{addition}}}\n{{{house_number}}}\n{{{addition}}}\n{{{postcode}}}\n{{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} {{/first}}\n{{{country}}}\n{{{infos}}}\n"
 };
 var MO$2 = {
-	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{road}}} {{{house_number}}}\n{{{addition}}}\n{{#first}} {{{suburb}}} || {{{village}}} || {{{hamlet}}} || {{{state_district}}} {{/first}}\n{{{state}}} {{{county}}}\n{{{country}}}\n{{{infos}}}\n"
+	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{road}}} {{{house_number}}}\n{{{addition}}}\n{{#first}} {{{suburb}}} || {{{village}}} || {{{hamlet}}} || {{{state_district}}} {{/first}}\n{{{country}}}\n{{{infos}}}\n"
 };
 var MO_pt = {
-	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{road}}} {{{house_number}}}\n{{{addition}}}\n{{#first}} {{{suburb}}} || {{{village}}} || {{{hamlet}}} || {{{state_district}}} {{/first}}\n{{{state}}} {{{county}}}\n{{{country}}}\n{{{infos}}}\n"
+	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{road}}} {{{house_number}}}\n{{{addition}}}\n{{#first}} {{{suburb}}} || {{{village}}} || {{{hamlet}}} || {{{state_district}}} {{/first}}\n{{{country}}}\n{{{infos}}}\n"
 };
 var MO_zh = {
 	address_template: "{{{country}}}\n{{{infos}}}\n{{#first}} {{{suburb}}} || {{{village}}} || {{{hamlet}}} || {{{state_district}}} {{/first}}\n{{{road}}}\n{{{addition}}}\n{{{house_number}}}\n{{{addition}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{attention}}}\n"
@@ -1751,36 +1751,36 @@ var MP$2 = {
 	add_component: "state=Northern Mariana Islands"
 };
 var MS$2 = {
-	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{house_number}}} {{{road}}}\n{{{addition}}}\n{{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} || {{{municipality}}} || {{{county}}} || {{{state_district}}} || {{{state}}} || {{/first}}\n{{{state}}} {{{county}}}\n{{{country}}}\n{{{infos}}}\n"
+	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{house_number}}} {{{road}}}\n{{{addition}}}\n{{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} || {{{municipality}}} || {{{county}}} || {{{state_district}}} || {{{state}}} || {{/first}}\n{{{country}}}\n{{{infos}}}\n"
 };
 var MT$2 = {
-	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{house_number}}} {{{road}}}\n{{{addition}}}\n{{#first}} {{{city}}} || {{{town}}} || {{{suburb}}} || {{{village}}} || {{{hamlet}}} {{/first}}\n{{{postcode}}}\n{{{state}}} {{{county}}}\n{{{country}}}\n{{{infos}}}\n"
+	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{house_number}}} {{{road}}}\n{{{addition}}}\n{{#first}} {{{city}}} || {{{town}}} || {{{suburb}}} || {{{village}}} || {{{hamlet}}} {{/first}}\n{{{postcode}}}\n{{{country}}}\n{{{infos}}}\n"
 };
 var MQ$2 = {
 	use_country: "FR",
 	change_country: "Martinique, France"
 };
 var MR$2 = {
-	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{house_number}}}, {{{road}}}\n{{{addition}}}\n{{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} || {{{suburb}}} || {{{city_district}}} || {{{neighbourhood}}} || {{{state}}} || {{/first}}\n{{{state}}} {{{county}}}\n{{{country}}}\n{{{infos}}}\n"
+	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{house_number}}}, {{{road}}}\n{{{addition}}}\n{{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} || {{{suburb}}} || {{{city_district}}} || {{{neighbourhood}}} || {{{state}}} || {{/first}}\n{{{country}}}\n{{{infos}}}\n"
 };
 var MU$3 = {
-	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{house_number}}}, {{{road}}}\n{{{addition}}}\n{{#first}} {{{suburb}}} || {{{city_district}}} || {{{neighbourhood}}} {{/first}}\n{{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} || {{{state}}} || {{/first}} {{{postcode}}}\n{{{state}}} {{{county}}}\n{{{country}}}\n{{{infos}}}\n"
+	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{house_number}}}, {{{road}}}\n{{{addition}}}\n{{#first}} {{{suburb}}} || {{{city_district}}} || {{{neighbourhood}}} {{/first}}\n{{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} || {{{state}}} || {{/first}} {{{postcode}}}\n{{{country}}}\n{{{infos}}}\n"
 };
 var MV$2 = {
 	address_template: "{{{attention}}}\n{{#first}} {{{house}}}, {{{quarter}}} || {{{house}}} {{/first}}\n{{{house_number}}} {{{road}}}\n{{{addition}}}\n{{#first}} {{{village}}} || {{{town}}} || {{{city}}} || {{{municipality}}} || {{{hamlet}}} || {{{county}}} || {{/first}} {{{postcode}}}\n{{#first}} {{{country}}} || {{{state}}} || {{/first}}\n"
 };
 var MW$3 = {
-	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{house_number}}} {{{road}}}\n{{{addition}}}\n{{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} || {{{municipality}}} || {{{county}}} || {{{state_district}}} || {{{state}}} || {{/first}}\n{{{state}}} {{{county}}}\n{{{country}}}\n{{{infos}}}\n"
+	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{house_number}}} {{{road}}}\n{{{addition}}}\n{{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} || {{{municipality}}} || {{{county}}} || {{{state_district}}} || {{{state}}} || {{/first}}\n{{{country}}}\n{{{infos}}}\n"
 };
 var MX$3 = {
-	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{road}}} {{{house_number}}}\n{{{addition}}}\n{{#first}} {{{suburb}}} || {{{city_district}}} || {{{neighbourhood}}} {{/first}}\n{{{postcode}}} {{#first}} {{{city}}} || {{{town}}} || {{{state_district}}} || {{{village}}} || {{{hamlet}}} {{/first}}, {{#first}} {{{state_code}}} || {{{state}}} || {{/first}}\n{{{state}}} {{{county}}}\n{{{country}}}\n{{{infos}}}\n"
+	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{road}}} {{{house_number}}}\n{{{addition}}}\n{{#first}} {{{suburb}}} || {{{city_district}}} || {{{neighbourhood}}} {{/first}}\n{{{postcode}}} {{#first}} {{{city}}} || {{{town}}} || {{{state_district}}} || {{{village}}} || {{{hamlet}}} {{/first}}, {{#first}} {{{state_code}}} || {{{state}}} || {{/first}}\n{{{country}}}\n{{{infos}}}\n"
 };
 var MY$3 = {
-	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{house_number}}} {{{road}}}\n{{{addition}}}\n{{#first}} {{{suburb}}} || {{{city_district}}} || {{{neighbourhood}}} {{/first}}\n{{{postcode}}} {{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} {{/first}}\n{{{state}}}\n{{{state}}} {{{county}}}\n{{{country}}}\n{{{infos}}}\n"
+	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{house_number}}} {{{road}}}\n{{{addition}}}\n{{#first}} {{{suburb}}} || {{{city_district}}} || {{{neighbourhood}}} {{/first}}\n{{{postcode}}} {{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} {{/first}}\n{{{state}}}\n{{{country}}}\n{{{infos}}}\n"
 };
 var MZ$3 = {
-	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{road}}}, {{{house_number}}}\n{{{addition}}}\n{{{postcode}}} {{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} || {{{municipality}}} || {{{state}}} || {{{county}}} || {{/first}}\n{{{state}}} {{{county}}}\n{{{country}}}\n{{{infos}}}\n",
-	fallback_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{road}}} {{{house_number}}}\n{{{addition}}}\n{{{place}}}\n{{{suburb}}}\n{{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} || {{{municipality}}} || {{{county}}} || {{/first}}\n{{#first}} || {{{state}}} || {{{county}}} || {{/first}}\n{{{state}}} {{{county}}}\n{{{country}}}\n{{{infos}}}\n"
+	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{road}}}, {{{house_number}}}\n{{{addition}}}\n{{{postcode}}} {{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} || {{{municipality}}} || {{{state}}} || {{{county}}} || {{/first}}\n{{{country}}}\n{{{infos}}}\n",
+	fallback_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{road}}} {{{house_number}}}\n{{{addition}}}\n{{{place}}}\n{{{suburb}}}\n{{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} || {{{municipality}}} || {{{county}}} || {{/first}}\n{{#first}} || {{{state}}} || {{{county}}} || {{/first}}\n{{{country}}}\n{{{infos}}}\n"
 };
 var NA$3 = {
 	address_template: "{{{attention}}}\n{{#first}} {{{house}}}, {{{quarter}}} || {{{house}}} {{/first}}\n{{{house_number}}} {{{road}}}\n{{{addition}}}\n{{#first}} {{{village}}} || {{{town}}} || {{{city}}} || {{{municipality}}} || {{{hamlet}}} || {{{county}}} || {{/first}} {{{postcode}}}\n{{#first}} {{{country}}} || {{{state}}} || {{/first}}\n"
@@ -1790,7 +1790,7 @@ var NC$2 = {
 	change_country: "Nouvelle-Calédonie, France"
 };
 var NE$2 = {
-	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{house_number}}}\n{{{addition}}}\n{{{road}}}\n{{{addition}}}\n{{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} {{/first}}\n{{{state}}} {{{county}}}\n{{{country}}}\n{{{infos}}}\n"
+	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{house_number}}}\n{{{addition}}}\n{{{road}}}\n{{{addition}}}\n{{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} {{/first}}\n{{{country}}}\n{{{infos}}}\n"
 };
 var NF$2 = {
 	use_country: "AU",
@@ -1798,13 +1798,13 @@ var NF$2 = {
 	change_country: "Australia"
 };
 var NG$3 = {
-	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{house_number}}} {{{road}}}\n{{{addition}}}\n{{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} {{/first}} {{{postcode}}}\n{{{state}}}\n{{{state}}} {{{county}}}\n{{{country}}}\n{{{infos}}}\n"
+	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{house_number}}} {{{road}}}\n{{{addition}}}\n{{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} {{/first}} {{{postcode}}}\n{{{state}}}\n{{{country}}}\n{{{infos}}}\n"
 };
 var NI$3 = {
-	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{road}}} {{{house_number}}}\n{{{addition}}}\n{{#first}} {{{suburb}}} || {{{city_district}}} || {{{neighbourhood}}} {{/first}}\n{{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} || {{{state}}} || {{/first}}\n{{{state}}} {{{county}}}\n{{{country}}}\n{{{infos}}}\n"
+	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{road}}} {{{house_number}}}\n{{{addition}}}\n{{#first}} {{{suburb}}} || {{{city_district}}} || {{{neighbourhood}}} {{/first}}\n{{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} || {{{state}}} || {{/first}}\n{{{country}}}\n{{{infos}}}\n"
 };
 var NL$4 = {
-	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{#first}} {{{road}}} || {{{place}}} || {{{hamlet}}} {{/first}} {{{house_number}}}\n{{{addition}}}\n{{{postcode}}} {{#first}} {{{postal_city}}} || {{{town}}} || {{{city}}} || {{{village}}} || {{{municipality}}} || {{{hamlet}}} || {{{county}}} || {{{state}}} || {{/first}}\n{{{archipelago}}}\n{{{state}}} {{{county}}}\n{{{country}}}\n{{{infos}}}\n",
+	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{#first}} {{{road}}} || {{{place}}} || {{{hamlet}}} {{/first}} {{{house_number}}}\n{{{addition}}}\n{{{postcode}}} {{#first}} {{{postal_city}}} || {{{town}}} || {{{city}}} || {{{village}}} || {{{municipality}}} || {{{hamlet}}} || {{{county}}} || {{{state}}} || {{/first}}\n{{{archipelago}}}\n{{{country}}}\n{{{infos}}}\n",
 	postformat_replace: [
 		[
 			"\n(\\d{4})(\\w{2}) ",
@@ -1817,19 +1817,19 @@ var NL$4 = {
 	]
 };
 var NO$3 = {
-	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{#first}} {{{road}}} || {{{place}}} || {{{hamlet}}} {{/first}} {{{house_number}}}\n{{{addition}}}\n{{{postcode}}} {{#first}} {{{postal_city}}} || {{{town}}} || {{{city}}} || {{{village}}} || {{{municipality}}} || {{{hamlet}}} || {{{county}}} || {{{state}}} || {{/first}}\n{{{archipelago}}}\n{{{state}}} {{{county}}}\n{{{country}}}\n{{{infos}}}\n"
+	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{#first}} {{{road}}} || {{{place}}} || {{{hamlet}}} {{/first}} {{{house_number}}}\n{{{addition}}}\n{{{postcode}}} {{#first}} {{{postal_city}}} || {{{town}}} || {{{city}}} || {{{village}}} || {{{municipality}}} || {{{hamlet}}} || {{{county}}} || {{{state}}} || {{/first}}\n{{{archipelago}}}\n{{{country}}}\n{{{infos}}}\n"
 };
 var NP$2 = {
-	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{road}}} {{{house_number}}}\n{{{addition}}}\n{{#first}} {{{suburb}}} || {{{neighbourhood}}} || {{{city}}} {{/first}}\n{{#first}} {{{municipality}}} || {{{county}}} || {{{state_district}}} || {{{state}}} || {{/first}} {{{postcode}}}\n{{{state}}} {{{county}}}\n{{{country}}}\n{{{infos}}}\n"
+	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{road}}} {{{house_number}}}\n{{{addition}}}\n{{#first}} {{{suburb}}} || {{{neighbourhood}}} || {{{city}}} {{/first}}\n{{#first}} {{{municipality}}} || {{{county}}} || {{{state_district}}} || {{{state}}} || {{/first}} {{{postcode}}}\n{{{country}}}\n{{{infos}}}\n"
 };
 var NR$2 = {
-	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{house_number}}} {{{road}}}\n{{{addition}}}\n{{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} || {{{municipality}}} || {{{county}}} || {{{state_district}}} || {{{state}}} || {{/first}}\n{{{state}}} {{{county}}}\n{{{country}}}\n{{{infos}}}\n"
+	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{house_number}}} {{{road}}}\n{{{addition}}}\n{{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} || {{{municipality}}} || {{{county}}} || {{{state_district}}} || {{{state}}} || {{/first}}\n{{{country}}}\n{{{infos}}}\n"
 };
 var NU$2 = {
-	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{house_number}}} {{{road}}}\n{{{addition}}}\n{{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} || {{{municipality}}} || {{{county}}} || {{{state_district}}} || {{{state}}} || {{/first}}\n{{{state}}} {{{county}}}\n{{{country}}}\n{{{infos}}}\n"
+	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{house_number}}} {{{road}}}\n{{{addition}}}\n{{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} || {{{municipality}}} || {{{county}}} || {{{state_district}}} || {{{state}}} || {{/first}}\n{{{country}}}\n{{{infos}}}\n"
 };
 var NZ$3 = {
-	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{house_number}}} {{{road}}}\n{{{addition}}}\n{{#first}} {{{suburb}}} || {{{city_district}}} || {{{neighbourhood}}} {{/first}}\n{{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} {{/first}} {{{postcode}}}\n{{{state}}} {{{county}}}\n{{{country}}}\n{{{infos}}}\n",
+	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{house_number}}} {{{road}}}\n{{{addition}}}\n{{#first}} {{{suburb}}} || {{{city_district}}} || {{{neighbourhood}}} {{/first}}\n{{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} {{/first}} {{{postcode}}}\n{{{country}}}\n{{{infos}}}\n",
 	postformat_replace: [
 		[
 			"Wellington\nWellington City",
@@ -1838,10 +1838,10 @@ var NZ$3 = {
 	]
 };
 var OM$3 = {
-	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{house_number}}} {{{road}}}\n{{{addition}}}\n{{{postcode}}}\n{{#first}} {{{city}}} || {{{town}}} || {{{state_district}}} || {{{village}}} || {{{hamlet}}} {{/first}}\n{{{state}}}\n{{{state}}} {{{county}}}\n{{{country}}}\n{{{infos}}}\n"
+	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{house_number}}} {{{road}}}\n{{{addition}}}\n{{{postcode}}}\n{{#first}} {{{city}}} || {{{town}}} || {{{state_district}}} || {{{village}}} || {{{hamlet}}} {{/first}}\n{{{state}}}\n{{{country}}}\n{{{infos}}}\n"
 };
 var PA$2 = {
-	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{road}}} {{{house_number}}}\n{{{addition}}}\n{{#first}} {{{suburb}}} || {{{city_district}}} || {{{neighbourhood}}} {{/first}}\n{{{postcode}}}\n{{#first}} {{{city}}} || {{{town}}} || {{{state_district}}} || {{{village}}} || {{{hamlet}}} {{/first}}\n{{{state}}}\n{{{state}}} {{{county}}}\n{{{country}}}\n{{{infos}}}\n",
+	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{road}}} {{{house_number}}}\n{{{addition}}}\n{{#first}} {{{suburb}}} || {{{city_district}}} || {{{neighbourhood}}} {{/first}}\n{{{postcode}}}\n{{#first}} {{{city}}} || {{{town}}} || {{{state_district}}} || {{{village}}} || {{{hamlet}}} {{/first}}\n{{{state}}}\n{{{country}}}\n{{{infos}}}\n",
 	replace: [
 		[
 			"city=Panama$",
@@ -1854,7 +1854,7 @@ var PA$2 = {
 	]
 };
 var PE$3 = {
-	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{road}}} {{{house_number}}}\n{{{addition}}}\n{{#first}} {{{suburb}}} || {{{city_district}}} || {{{neighbourhood}}} {{/first}}\n{{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} {{/first}} {{{postcode}}}\n{{{state}}} {{{county}}}\n{{{country}}}\n{{{infos}}}\n"
+	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{road}}} {{{house_number}}}\n{{{addition}}}\n{{#first}} {{{suburb}}} || {{{city_district}}} || {{{neighbourhood}}} {{/first}}\n{{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} {{/first}} {{{postcode}}}\n{{{country}}}\n{{{infos}}}\n"
 };
 var PF$2 = {
 	use_country: "FR",
@@ -1867,16 +1867,16 @@ var PF$2 = {
 	]
 };
 var PG$3 = {
-	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{house_number}}} {{{road}}}\n{{{addition}}}\n{{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} {{/first}} {{{postcode}}} {{{state}}}\n{{{state}}} {{{county}}}\n{{{country}}}\n{{{infos}}}\n"
+	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{house_number}}} {{{road}}}\n{{{addition}}}\n{{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} {{/first}} {{{postcode}}} {{{state}}}\n{{{country}}}\n{{{infos}}}\n"
 };
 var PH$3 = {
-	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{house_number}}} {{{road}}}, {{#first}}{{{suburb}}} || {{{city_district}}} || {{{neighbourhood}}}{{/first}}, {{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} || {{{suburb}}} || {{{state_district}}} {{/first}}\n{{{addition}}}\n{{{postcode}}} {{#first}} {{{municipality}}} {{{region}}} || {{{state}}} || {{/first}}\n{{{state}}} {{{county}}}\n{{{country}}}\n{{{infos}}}\n"
+	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{house_number}}} {{{road}}}, {{#first}}{{{suburb}}} || {{{city_district}}} || {{{neighbourhood}}}{{/first}}, {{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} || {{{suburb}}} || {{{state_district}}} {{/first}}\n{{{addition}}}\n{{{postcode}}} {{#first}} {{{municipality}}} {{{region}}} || {{{state}}} || {{/first}}\n{{{country}}}\n{{{infos}}}\n"
 };
 var PK$3 = {
-	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{house_number}}} {{{road}}}\n{{{addition}}}\n{{#first}} {{{suburb}}} || {{{city_district}}} || {{{neighbourhood}}} {{/first}}\n{{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} || {{{state}}} || {{/first}} {{{postcode}}}\n{{{state}}} {{{county}}}\n{{{country}}}\n{{{infos}}}\n"
+	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{house_number}}} {{{road}}}\n{{{addition}}}\n{{#first}} {{{suburb}}} || {{{city_district}}} || {{{neighbourhood}}} {{/first}}\n{{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} || {{{state}}} || {{/first}} {{{postcode}}}\n{{{country}}}\n{{{infos}}}\n"
 };
 var PL$4 = {
-	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{#first}} {{{road}}} || {{{place}}} || {{{hamlet}}} {{/first}} {{{house_number}}}\n{{{addition}}}\n{{{postcode}}} {{#first}} {{{postal_city}}} || {{{town}}} || {{{city}}} || {{{village}}} || {{{municipality}}} || {{{hamlet}}} || {{{county}}} || {{{state}}} || {{/first}}\n{{{archipelago}}}\n{{{state}}} {{{county}}}\n{{{country}}}\n{{{infos}}}\n",
+	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{#first}} {{{road}}} || {{{place}}} || {{{hamlet}}} {{/first}} {{{house_number}}}\n{{{addition}}}\n{{{postcode}}} {{#first}} {{{postal_city}}} || {{{town}}} || {{{city}}} || {{{village}}} || {{{municipality}}} || {{{hamlet}}} || {{{county}}} || {{{state}}} || {{/first}}\n{{{archipelago}}}\n{{{country}}}\n{{{infos}}}\n",
 	postformat_replace: [
 		[
 			"\n(\\d{2})(\\w{3}) ",
@@ -1889,7 +1889,7 @@ var PM$2 = {
 	change_country: "Saint-Pierre-et-Miquelon, France"
 };
 var PN$2 = {
-	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{#first}} {{{city}}} || {{{town}}} || {{{island}}} {{/first}}\n{{{state}}} {{{county}}}\n{{{country}}}\n{{{infos}}}\n"
+	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{#first}} {{{city}}} || {{{town}}} || {{{island}}} {{/first}}\n{{{country}}}\n{{{infos}}}\n"
 };
 var PR$2 = {
 	use_country: "US",
@@ -1900,7 +1900,7 @@ var PS$2 = {
 	use_country: "IL"
 };
 var PT$4 = {
-	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{#first}} {{{road}}} || {{{place}}} || {{{hamlet}}} {{/first}} {{{house_number}}}\n{{{addition}}}\n{{{postcode}}} {{#first}} {{{postal_city}}} || {{{town}}} || {{{city}}} || {{{village}}} || {{{municipality}}} || {{{hamlet}}} || {{{county}}} || {{{state}}} || {{/first}}\n{{{archipelago}}}\n{{{state}}} {{{county}}}\n{{{country}}}\n{{{infos}}}\n",
+	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{#first}} {{{road}}} || {{{place}}} || {{{hamlet}}} {{/first}} {{{house_number}}}\n{{{addition}}}\n{{{postcode}}} {{#first}} {{{postal_city}}} || {{{town}}} || {{{city}}} || {{{village}}} || {{{municipality}}} || {{{hamlet}}} || {{{county}}} || {{{state}}} || {{/first}}\n{{{archipelago}}}\n{{{country}}}\n{{{infos}}}\n",
 	postformat_replace: [
 		[
 			"\n(\\d{4})(\\d{3}) ",
@@ -1909,45 +1909,45 @@ var PT$4 = {
 	]
 };
 var PW$2 = {
-	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{#first}} {{{road}}} || {{{place}}} || {{{hamlet}}} {{/first}} {{{house_number}}}\n{{{addition}}}\n{{{postcode}}} {{#first}} {{{postal_city}}} || {{{town}}} || {{{city}}} || {{{village}}} || {{{municipality}}} || {{{hamlet}}} || {{{county}}} || {{{state}}} || {{/first}}\n{{{archipelago}}}\n{{{state}}} {{{county}}}\n{{{country}}}\n{{{infos}}}\n"
+	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{#first}} {{{road}}} || {{{place}}} || {{{hamlet}}} {{/first}} {{{house_number}}}\n{{{addition}}}\n{{{postcode}}} {{#first}} {{{postal_city}}} || {{{town}}} || {{{city}}} || {{{village}}} || {{{municipality}}} || {{{hamlet}}} || {{{county}}} || {{{state}}} || {{/first}}\n{{{archipelago}}}\n{{{country}}}\n{{{infos}}}\n"
 };
 var PY$2 = {
-	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{#first}} {{{road}}} || {{{place}}} || {{{hamlet}}} {{/first}} {{{house_number}}}\n{{{addition}}}\n{{{postcode}}} {{#first}} {{{postal_city}}} || {{{town}}} || {{{city}}} || {{{village}}} || {{{municipality}}} || {{{hamlet}}} || {{{county}}} || {{{state}}} || {{/first}}\n{{{archipelago}}}\n{{{state}}} {{{county}}}\n{{{country}}}\n{{{infos}}}\n"
+	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{#first}} {{{road}}} || {{{place}}} || {{{hamlet}}} {{/first}} {{{house_number}}}\n{{{addition}}}\n{{{postcode}}} {{#first}} {{{postal_city}}} || {{{town}}} || {{{city}}} || {{{village}}} || {{{municipality}}} || {{{hamlet}}} || {{{county}}} || {{{state}}} || {{/first}}\n{{{archipelago}}}\n{{{country}}}\n{{{infos}}}\n"
 };
 var QA$3 = {
-	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{road}}} {{{house_number}}}\n{{{addition}}}\n{{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} || {{{municipality}}} || {{{county}}} || {{{state_district}}} || {{{state}}} || {{/first}}\n{{{state}}} {{{county}}}\n{{{country}}}\n{{{infos}}}\n"
+	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{road}}} {{{house_number}}}\n{{{addition}}}\n{{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} || {{{municipality}}} || {{{county}}} || {{{state_district}}} || {{{state}}} || {{/first}}\n{{{country}}}\n{{{infos}}}\n"
 };
 var RE$2 = {
 	use_country: "FR",
 	change_country: "La Réunion, France"
 };
 var RO$4 = {
-	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{#first}} {{{road}}} || {{{place}}} || {{{hamlet}}} {{/first}} {{{house_number}}}\n{{{addition}}}\n{{{postcode}}} {{#first}} {{{postal_city}}} || {{{town}}} || {{{city}}} || {{{village}}} || {{{municipality}}} || {{{hamlet}}} || {{{county}}} || {{{state}}} || {{/first}}\n{{{archipelago}}}\n{{{state}}} {{{county}}}\n{{{country}}}\n{{{infos}}}\n"
+	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{#first}} {{{road}}} || {{{place}}} || {{{hamlet}}} {{/first}} {{{house_number}}}\n{{{addition}}}\n{{{postcode}}} {{#first}} {{{postal_city}}} || {{{town}}} || {{{city}}} || {{{village}}} || {{{municipality}}} || {{{hamlet}}} || {{{county}}} || {{{state}}} || {{/first}}\n{{{archipelago}}}\n{{{country}}}\n{{{infos}}}\n"
 };
 var RS$2 = {
-	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{#first}} {{{road}}} || {{{place}}} || {{{hamlet}}} {{/first}} {{{house_number}}}\n{{{addition}}}\n{{{postcode}}} {{#first}} {{{postal_city}}} || {{{town}}} || {{{city}}} || {{{village}}} || {{{municipality}}} || {{{hamlet}}} || {{{county}}} || {{{state}}} || {{/first}}\n{{{archipelago}}}\n{{{state}}} {{{county}}}\n{{{country}}}\n{{{infos}}}\n"
+	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{#first}} {{{road}}} || {{{place}}} || {{{hamlet}}} {{/first}} {{{house_number}}}\n{{{addition}}}\n{{{postcode}}} {{#first}} {{{postal_city}}} || {{{town}}} || {{{city}}} || {{{village}}} || {{{municipality}}} || {{{hamlet}}} || {{{county}}} || {{{state}}} || {{/first}}\n{{{archipelago}}}\n{{{country}}}\n{{{infos}}}\n"
 };
 var RU$3 = {
-	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{road}}}, {{{house_number}}}\n{{{addition}}}\n{{#first}} {{{suburb}}} || {{{city_district}}} {{/first}}\n{{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} {{/first}}\n{{{state}}}\n{{{state}}} {{{county}}}\n{{{country}}}\n{{{infos}}}\n{{{postcode}}}\n",
-	fallback_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{road}}}, {{{house_number}}}\n{{{addition}}}\n{{#first}} {{{suburb}}} || {{{city_district}}} || {{{neighbourhood}}} || {{{island}}} || {{{village}}} || {{{hamlet}}} {{/first}}\n{{#first}} {{{city}}} || {{{town}}} || {{{municipality}}} {{/first}}\n{{#first}} || {{{county}}} || {{{state_district}}} || {{{state}}} || {{/first}}\n{{{state}}} {{{county}}}\n{{{country}}}\n{{{infos}}}\n"
+	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{road}}}, {{{house_number}}}\n{{{addition}}}\n{{#first}} {{{suburb}}} || {{{city_district}}} {{/first}}\n{{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} {{/first}}\n{{{state}}}\n{{{country}}}\n{{{infos}}}\n{{{postcode}}}\n",
+	fallback_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{road}}}, {{{house_number}}}\n{{{addition}}}\n{{#first}} {{{suburb}}} || {{{city_district}}} || {{{neighbourhood}}} || {{{island}}} || {{{village}}} || {{{hamlet}}} {{/first}}\n{{#first}} {{{city}}} || {{{town}}} || {{{municipality}}} {{/first}}\n{{#first}} || {{{county}}} || {{{state_district}}} || {{{state}}} || {{/first}}\n{{{country}}}\n{{{infos}}}\n"
 };
 var RW$2 = {
-	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{house_number}}} {{{road}}}\n{{{addition}}}\n{{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} || {{{municipality}}} || {{{county}}} || {{{state_district}}} || {{{state}}} || {{/first}}\n{{{state}}} {{{county}}}\n{{{country}}}\n{{{infos}}}\n"
+	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{house_number}}} {{{road}}}\n{{{addition}}}\n{{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} || {{{municipality}}} || {{{county}}} || {{{state_district}}} || {{{state}}} || {{/first}}\n{{{country}}}\n{{{infos}}}\n"
 };
 var SA$2 = {
-	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{house_number}}} {{{road}}}, {{#first}} {{{village}}} || {{{hamlet}}} || {{{city_district}}} || {{{suburb}}} || {{{neighbourhood}}} {{/first}}\n{{{addition}}}\n{{#first}} {{{city}}} || {{{town}}} || {{{state_district}}} {{/first}} {{{postcode}}}\n{{{state}}} {{{county}}}\n{{{country}}}\n{{{infos}}}\n"
+	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{house_number}}} {{{road}}}, {{#first}} {{{village}}} || {{{hamlet}}} || {{{city_district}}} || {{{suburb}}} || {{{neighbourhood}}} {{/first}}\n{{{addition}}}\n{{#first}} {{{city}}} || {{{town}}} || {{{state_district}}} {{/first}} {{{postcode}}}\n{{{country}}}\n{{{infos}}}\n"
 };
 var SB$3 = {
-	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{road}}} {{{house_number}}}\n{{{addition}}}\n{{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} || {{{municipality}}} || {{{county}}} || {{{state_district}}} || {{{state}}} || {{/first}}\n{{{state}}} {{{county}}}\n{{{country}}}\n{{{infos}}}\n"
+	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{road}}} {{{house_number}}}\n{{{addition}}}\n{{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} || {{{municipality}}} || {{{county}}} || {{{state_district}}} || {{{state}}} || {{/first}}\n{{{country}}}\n{{{infos}}}\n"
 };
 var SC$2 = {
-	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{house_number}}} {{{road}}}\n{{{addition}}}\n{{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} || {{{island}}} {{/first}}\n{{{island}}}\n{{{state}}} {{{county}}}\n{{{country}}}\n{{{infos}}}\n"
+	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{house_number}}} {{{road}}}\n{{{addition}}}\n{{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} || {{{island}}} {{/first}}\n{{{island}}}\n{{{country}}}\n{{{infos}}}\n"
 };
 var SD$3 = {
-	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{#first}} {{{road}}} || {{{place}}} || {{{hamlet}}} {{/first}} {{{house_number}}}\n{{{addition}}}\n{{{postcode}}} {{#first}} {{{postal_city}}} || {{{town}}} || {{{city}}} || {{{village}}} || {{{municipality}}} || {{{hamlet}}} || {{{county}}} || {{{state}}} || {{/first}}\n{{{archipelago}}}\n{{{state}}} {{{county}}}\n{{{country}}}\n{{{infos}}}\n"
+	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{#first}} {{{road}}} || {{{place}}} || {{{hamlet}}} {{/first}} {{{house_number}}}\n{{{addition}}}\n{{{postcode}}} {{#first}} {{{postal_city}}} || {{{town}}} || {{{city}}} || {{{village}}} || {{{municipality}}} || {{{hamlet}}} || {{{county}}} || {{{state}}} || {{/first}}\n{{{archipelago}}}\n{{{country}}}\n{{{infos}}}\n"
 };
 var SE$3 = {
-	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{#first}} {{{road}}} || {{{place}}} || {{{hamlet}}} {{/first}} {{{house_number}}}\n{{{addition}}}\n{{{postcode}}} {{#first}} {{{postal_city}}} || {{{town}}} || {{{city}}} || {{{village}}} || {{{municipality}}} || {{{hamlet}}} || {{{county}}} || {{{state}}} || {{/first}}\n{{{archipelago}}}\n{{{state}}} {{{county}}}\n{{{country}}}\n{{{infos}}}\n",
+	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{#first}} {{{road}}} || {{{place}}} || {{{hamlet}}} {{/first}} {{{house_number}}}\n{{{addition}}}\n{{{postcode}}} {{#first}} {{{postal_city}}} || {{{town}}} || {{{city}}} || {{{village}}} || {{{municipality}}} || {{{hamlet}}} || {{{county}}} || {{{state}}} || {{/first}}\n{{{archipelago}}}\n{{{country}}}\n{{{infos}}}\n",
 	postformat_replace: [
 		[
 			"\n(\\d{3})(\\d{2}) ",
@@ -1956,21 +1956,21 @@ var SE$3 = {
 	]
 };
 var SG$2 = {
-	address_template: "{{{attention}}}\n{{#first}} {{{house}}}, {{{quarter}}} || {{{house}}} {{/first}}\n{{{floor}}} {{{door}}}\n{{{house_number}}} {{{road}}}, {{{residential}}}\n{{#first}} {{{country}}} || {{{town}}} || {{{city}}} || {{{municipality}}} || {{{hamlet}}} || {{{village}}} || {{{county}}} || {{/first}} {{{postcode}}}\n{{{state}}} {{{county}}}\n{{{country}}}\n{{{infos}}}\n"
+	address_template: "{{{attention}}}\n{{#first}} {{{house}}}, {{{quarter}}} || {{{house}}} {{/first}}\n{{{floor}}} {{{door}}}\n{{{house_number}}} {{{road}}}, {{{residential}}}\n{{#first}} {{{country}}} || {{{town}}} || {{{city}}} || {{{municipality}}} || {{{hamlet}}} || {{{village}}} || {{{county}}} || {{/first}} {{{postcode}}}\n{{{country}}}\n{{{infos}}}\n"
 };
 var SH$3 = {
 	use_country: "GB",
 	change_country: "$state, United Kingdom"
 };
 var SI$2 = {
-	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{#first}} {{{road}}} || {{{place}}} || {{{hamlet}}} {{/first}} {{{house_number}}}\n{{{addition}}}\n{{{postcode}}} {{#first}} {{{postal_city}}} || {{{town}}} || {{{city}}} || {{{village}}} || {{{municipality}}} || {{{hamlet}}} || {{{county}}} || {{{state}}} || {{/first}}\n{{{archipelago}}}\n{{{state}}} {{{county}}}\n{{{country}}}\n{{{infos}}}\n"
+	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{#first}} {{{road}}} || {{{place}}} || {{{hamlet}}} {{/first}} {{{house_number}}}\n{{{addition}}}\n{{{postcode}}} {{#first}} {{{postal_city}}} || {{{town}}} || {{{city}}} || {{{village}}} || {{{municipality}}} || {{{hamlet}}} || {{{county}}} || {{{state}}} || {{/first}}\n{{{archipelago}}}\n{{{country}}}\n{{{infos}}}\n"
 };
 var SJ$2 = {
 	use_country: "NO",
 	change_country: "Norway"
 };
 var SK$4 = {
-	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{road}}} {{{house_number}}}\n{{{addition}}}\n{{{postcode}}} {{#first}} {{{postal_city}}} || {{{city}}} || {{{town}}} || {{{village}}} || {{{municipality}}} || {{{city_district}}} || {{{hamlet}}} || {{{county}}} || {{{state}}} || {{/first}}\n{{{state}}} {{{county}}}\n{{{country}}}\n{{{infos}}}\n",
+	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{road}}} {{{house_number}}}\n{{{addition}}}\n{{{postcode}}} {{#first}} {{{postal_city}}} || {{{city}}} || {{{town}}} || {{{village}}} || {{{municipality}}} || {{{city_district}}} || {{{hamlet}}} || {{{county}}} || {{{state}}} || {{/first}}\n{{{country}}}\n{{{infos}}}\n",
 	replace: [
 		[
 			"^District of ",
@@ -1989,13 +1989,13 @@ var SK$4 = {
 	]
 };
 var SL$4 = {
-	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{house_number}}} {{{road}}}\n{{{addition}}}\n{{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} || {{{municipality}}} || {{{county}}} || {{{state_district}}} || {{{state}}} || {{/first}}\n{{{state}}} {{{county}}}\n{{{country}}}\n{{{infos}}}\n"
+	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{house_number}}} {{{road}}}\n{{{addition}}}\n{{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} || {{{municipality}}} || {{{county}}} || {{{state_district}}} || {{{state}}} || {{/first}}\n{{{country}}}\n{{{infos}}}\n"
 };
 var SM$2 = {
 	use_country: "IT"
 };
 var SN$3 = {
-	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{house_number}}} {{{road}}}\n{{{addition}}}\n{{{place}}}\n{{{postcode}}} {{#first}} {{{town}}} || {{{village}}} || {{{hamlet}}} || {{{city}}} || {{{municipality}}} || {{{state}}} || {{/first}}\n{{{state}}} {{{county}}}\n{{{country}}}\n{{{infos}}}\n",
+	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{house_number}}} {{{road}}}\n{{{addition}}}\n{{{place}}}\n{{{postcode}}} {{#first}} {{{town}}} || {{{village}}} || {{{hamlet}}} || {{{city}}} || {{{municipality}}} || {{{state}}} || {{/first}}\n{{{country}}}\n{{{infos}}}\n",
 	replace: [
 		[
 			"^Commune de ",
@@ -2012,19 +2012,19 @@ var SN$3 = {
 	]
 };
 var SO$3 = {
-	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{road}}} {{{house_number}}}\n{{{addition}}}\n{{#first}} {{{suburb}}} || {{{city_district}}} || {{{neighbourhood}}} {{/first}}\n{{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} || {{{state}}} || {{/first}}\n{{{state}}} {{{county}}}\n{{{country}}}\n{{{infos}}}\n"
+	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{road}}} {{{house_number}}}\n{{{addition}}}\n{{#first}} {{{suburb}}} || {{{city_district}}} || {{{neighbourhood}}} {{/first}}\n{{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} || {{{state}}} || {{/first}}\n{{{country}}}\n{{{infos}}}\n"
 };
 var SR$3 = {
-	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{road}}} {{{house_number}}}\n{{{addition}}}\n{{#first}} {{{suburb}}} || {{{city_district}}} || {{{neighbourhood}}} {{/first}}\n{{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} || {{{state}}} || {{/first}}\n{{{state}}} {{{county}}}\n{{{country}}}\n{{{infos}}}\n"
+	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{road}}} {{{house_number}}}\n{{{addition}}}\n{{#first}} {{{suburb}}} || {{{city_district}}} || {{{neighbourhood}}} {{/first}}\n{{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} || {{{state}}} || {{/first}}\n{{{country}}}\n{{{infos}}}\n"
 };
 var SS$3 = {
-	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{road}}} {{{house_number}}}\n{{{addition}}}\n{{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} || {{{municipality}}} || {{{county}}} || {{{state_district}}} || {{{state}}} || {{/first}}\n{{{state}}} {{{county}}}\n{{{country}}}\n{{{infos}}}\n"
+	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{road}}} {{{house_number}}}\n{{{addition}}}\n{{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} || {{{municipality}}} || {{{county}}} || {{{state_district}}} || {{{state}}} || {{/first}}\n{{{country}}}\n{{{infos}}}\n"
 };
 var ST$3 = {
-	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{road}}} {{{house_number}}}\n{{{addition}}}\n{{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} || {{{municipality}}} || {{{county}}} || {{{state_district}}} || {{{state}}} || {{/first}}\n{{{state}}} {{{county}}}\n{{{country}}}\n{{{infos}}}\n"
+	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{road}}} {{{house_number}}}\n{{{addition}}}\n{{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} || {{{municipality}}} || {{{county}}} || {{{state_district}}} || {{{state}}} || {{/first}}\n{{{country}}}\n{{{infos}}}\n"
 };
 var SV$4 = {
-	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{road}}} {{{house_number}}}\n{{{addition}}}\n{{{postcode}}} - {{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} {{/first}}\n{{{state}}}\n{{{state}}} {{{county}}}\n{{{country}}}\n{{{infos}}}\n",
+	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{road}}} {{{house_number}}}\n{{{addition}}}\n{{{postcode}}} - {{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} {{/first}}\n{{{state}}}\n{{{country}}}\n{{{infos}}}\n",
 	postformat_replace: [
 		[
 			"\n- ",
@@ -2033,71 +2033,71 @@ var SV$4 = {
 	]
 };
 var SX$2 = {
-	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{road}}} {{{house_number}}}\n{{{addition}}}\n{{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} || {{{municipality}}} || {{{county}}} || {{{state_district}}} || {{{state}}} || {{/first}}\n{{{state}}} {{{county}}}\n{{{country}}}\n{{{infos}}}\n"
+	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{road}}} {{{house_number}}}\n{{{addition}}}\n{{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} || {{{municipality}}} || {{{county}}} || {{{state_district}}} || {{{state}}} || {{/first}}\n{{{country}}}\n{{{infos}}}\n"
 };
 var SY$3 = {
-	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{road}}}, {{{house_number}}}\n{{{addition}}}\n{{#first}} {{{village}}} || {{{hamlet}}} || {{{city_district}}} || {{{neighbourhood}}} || {{{suburb}}} {{/first}}\n{{{postcode}}} {{#first}} {{{city}}} || {{{town}}} || {{{state_district}}} || {{{state}}} || {{/first}}\n\n{{{state}}} {{{county}}}\n{{{country}}}\n{{{infos}}}\n"
+	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{road}}}, {{{house_number}}}\n{{{addition}}}\n{{#first}} {{{village}}} || {{{hamlet}}} || {{{city_district}}} || {{{neighbourhood}}} || {{{suburb}}} {{/first}}\n{{{postcode}}} {{#first}} {{{city}}} || {{{town}}} || {{{state_district}}} || {{{state}}} || {{/first}}\n\n{{{country}}}\n{{{infos}}}\n"
 };
 var SZ$3 = {
-	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{road}}} {{{house_number}}}\n{{{addition}}}\n{{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} || {{{state}}} || {{/first}}\n{{{postcode}}}\n{{{state}}} {{{county}}}\n{{{country}}}\n{{{infos}}}\n"
+	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{road}}} {{{house_number}}}\n{{{addition}}}\n{{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} || {{{state}}} || {{/first}}\n{{{postcode}}}\n{{{country}}}\n{{{infos}}}\n"
 };
 var TC$2 = {
 	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{house_number}}} {{{road}}}\n{{{addition}}}\n{{{quarter}}}\n{{#first}} {{{village}}} || {{{town}}} || {{{city}}} || {{{municipality}}} || {{{hamlet}}} || {{{county}}} || {{/first}}\n{{{postcode}}}\n{{#first}} {{{country}}} || {{{state}}} || {{/first}}\n",
-	fallback_template: "{{{attention}}}\n{{{house_number}}} {{{road}}}\n{{{addition}}}\n{{{quarter}}}\n{{#first}} {{{village}}} || {{{town}}} || {{{city}}} || {{{municipality}}} || {{{hamlet}}} || {{{county}}} || {{/first}}\n{{{island}}}\n{{{state}}} {{{county}}}\n{{{country}}}\n{{{infos}}}\n"
+	fallback_template: "{{{attention}}}\n{{{house_number}}} {{{road}}}\n{{{addition}}}\n{{{quarter}}}\n{{#first}} {{{village}}} || {{{town}}} || {{{city}}} || {{{municipality}}} || {{{hamlet}}} || {{{county}}} || {{/first}}\n{{{island}}}\n{{{country}}}\n{{{infos}}}\n"
 };
 var TD$3 = {
-	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{road}}} {{{house_number}}}\n{{{addition}}}\n{{#first}} {{{suburb}}} || {{{city_district}}} || {{{neighbourhood}}} {{/first}}\n{{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} || {{{state}}} || {{/first}}\n{{{state}}} {{{county}}}\n{{{country}}}\n{{{infos}}}\n"
+	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{road}}} {{{house_number}}}\n{{{addition}}}\n{{#first}} {{{suburb}}} || {{{city_district}}} || {{{neighbourhood}}} {{/first}}\n{{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} || {{{state}}} || {{/first}}\n{{{country}}}\n{{{infos}}}\n"
 };
 var TF$2 = {
 	use_country: "FR",
 	change_country: "Terres australes et antarctiques françaises, France"
 };
 var TG$3 = {
-	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{house_number}}}, {{{road}}}\n{{{addition}}}\n{{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} || {{{suburb}}} || {{{city_district}}} || {{{neighbourhood}}} || {{{state}}} || {{/first}}\n{{{state}}} {{{county}}}\n{{{country}}}\n{{{infos}}}\n"
+	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{house_number}}}, {{{road}}}\n{{{addition}}}\n{{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} || {{{suburb}}} || {{{city_district}}} || {{{neighbourhood}}} || {{{state}}} || {{/first}}\n{{{country}}}\n{{{infos}}}\n"
 };
 var TH$2 = {
-	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{house_number}}} {{#first}} {{{village}}} || {{{hamlet}}} {{/first}}\n{{{road}}}\n{{{addition}}}\n{{#first}} {{{neighbourhood}}} || {{{city}}} || {{{town}}} {{/first}}, {{#first}} {{{suburb}}} || {{{city_district}}} || {{{state_district}}} {{/first}}\n{{{state}}} {{{postcode}}}\n{{{state}}} {{{county}}}\n{{{country}}}\n{{{infos}}}\n"
+	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{house_number}}} {{#first}} {{{village}}} || {{{hamlet}}} {{/first}}\n{{{road}}}\n{{{addition}}}\n{{#first}} {{{neighbourhood}}} || {{{city}}} || {{{town}}} {{/first}}, {{#first}} {{{suburb}}} || {{{city_district}}} || {{{state_district}}} {{/first}}\n{{{state}}} {{{postcode}}}\n{{{country}}}\n{{{infos}}}\n"
 };
 var TJ$3 = {
-	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{#first}} {{{road}}} || {{{place}}} || {{{hamlet}}} {{/first}} {{{house_number}}}\n{{{addition}}}\n{{{postcode}}} {{#first}} {{{postal_city}}} || {{{town}}} || {{{city}}} || {{{village}}} || {{{municipality}}} || {{{hamlet}}} || {{{county}}} || {{{state}}} || {{/first}}\n{{{archipelago}}}\n{{{state}}} {{{county}}}\n{{{country}}}\n{{{infos}}}\n"
+	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{#first}} {{{road}}} || {{{place}}} || {{{hamlet}}} {{/first}} {{{house_number}}}\n{{{addition}}}\n{{{postcode}}} {{#first}} {{{postal_city}}} || {{{town}}} || {{{city}}} || {{{village}}} || {{{municipality}}} || {{{hamlet}}} || {{{county}}} || {{{state}}} || {{/first}}\n{{{archipelago}}}\n{{{country}}}\n{{{infos}}}\n"
 };
 var TK$2 = {
 	use_country: "NZ",
 	change_country: "Tokelau, New Zealand"
 };
 var TL$3 = {
-	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{road}}} {{{house_number}}}\n{{{addition}}}\n{{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} || {{{municipality}}} || {{{county}}} || {{{state_district}}} || {{{state}}} || {{/first}}\n{{{state}}} {{{county}}}\n{{{country}}}\n{{{infos}}}\n"
+	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{road}}} {{{house_number}}}\n{{{addition}}}\n{{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} || {{{municipality}}} || {{{county}}} || {{{state_district}}} || {{{state}}} || {{/first}}\n{{{country}}}\n{{{infos}}}\n"
 };
 var TM$2 = {
-	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{house_number}}}, {{{road}}}\n{{{addition}}}\n{{{postcode}}} {{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} || {{{state}}} || {{/first}}\n{{{state}}} {{{county}}}\n{{{country}}}\n{{{infos}}}\n"
+	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{house_number}}}, {{{road}}}\n{{{addition}}}\n{{{postcode}}} {{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} || {{{state}}} || {{/first}}\n{{{country}}}\n{{{infos}}}\n"
 };
 var TN$2 = {
-	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{house_number}}} {{{road}}}\n{{{addition}}}\n{{{place}}}\n{{{postcode}}} {{#first}} {{{town}}} || {{{village}}} || {{{hamlet}}} || {{{city}}} || {{{municipality}}} || {{{state}}} || {{/first}}\n{{{state}}} {{{county}}}\n{{{country}}}\n{{{infos}}}\n"
+	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{house_number}}} {{{road}}}\n{{{addition}}}\n{{{place}}}\n{{{postcode}}} {{#first}} {{{town}}} || {{{village}}} || {{{hamlet}}} || {{{city}}} || {{{municipality}}} || {{{state}}} || {{/first}}\n{{{country}}}\n{{{infos}}}\n"
 };
 var TO$2 = {
-	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{house_number}}} {{{road}}}\n{{{addition}}}\n{{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} || {{{municipality}}} || {{{county}}} || {{{state_district}}} || {{{state}}} || {{/first}}\n{{{state}}} {{{county}}}\n{{{country}}}\n{{{infos}}}\n"
+	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{house_number}}} {{{road}}}\n{{{addition}}}\n{{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} || {{{municipality}}} || {{{county}}} || {{{state_district}}} || {{{state}}} || {{/first}}\n{{{country}}}\n{{{infos}}}\n"
 };
 var TR$3 = {
-	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{#first}} {{{road}}} || {{{place}}} || {{{hamlet}}} {{/first}} {{{house_number}}}\n{{{addition}}}\n{{{postcode}}} {{#first}} {{{postal_city}}} || {{{town}}} || {{{city}}} || {{{village}}} || {{{municipality}}} || {{{hamlet}}} || {{{county}}} || {{{state}}} || {{/first}}\n{{{archipelago}}}\n{{{state}}} {{{county}}}\n{{{country}}}\n{{{infos}}}\n"
+	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{#first}} {{{road}}} || {{{place}}} || {{{hamlet}}} {{/first}} {{{house_number}}}\n{{{addition}}}\n{{{postcode}}} {{#first}} {{{postal_city}}} || {{{town}}} || {{{city}}} || {{{village}}} || {{{municipality}}} || {{{hamlet}}} || {{{county}}} || {{{state}}} || {{/first}}\n{{{archipelago}}}\n{{{country}}}\n{{{infos}}}\n"
 };
 var TT$3 = {
-	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{house_number}}} {{{road}}}\n{{{addition}}}\n{{#first}} {{{suburb}}} || {{{city_district}}} || {{{state_district}}} {{/first}}\n{{#first}} {{{city}}} || {{{town}}} || {{{state_district}}} || {{{village}}} || {{{hamlet}}} {{/first}}, {{{postcode}}}\n{{{state}}} {{{county}}}\n{{{country}}}\n{{{infos}}}\n"
+	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{house_number}}} {{{road}}}\n{{{addition}}}\n{{#first}} {{{suburb}}} || {{{city_district}}} || {{{state_district}}} {{/first}}\n{{#first}} {{{city}}} || {{{town}}} || {{{state_district}}} || {{{village}}} || {{{hamlet}}} {{/first}}, {{{postcode}}}\n{{{country}}}\n{{{infos}}}\n"
 };
 var TV$2 = {
-	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{house_number}}} {{{road}}}\n{{{addition}}}\n{{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} || {{{municipality}}} {{/first}}\n{{#first}} || {{{county}}} || {{{state_district}}} || {{{state}}} || {{{island}}} {{/first}}\n{{{state}}} {{{county}}}\n{{{country}}}\n{{{infos}}}\n"
+	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{house_number}}} {{{road}}}\n{{{addition}}}\n{{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} || {{{municipality}}} {{/first}}\n{{#first}} || {{{county}}} || {{{state_district}}} || {{{state}}} || {{{island}}} {{/first}}\n{{{country}}}\n{{{infos}}}\n"
 };
 var TW$2 = {
 	address_template: "{{{country}}}\n{{{infos}}}\n{{{postcode}}}\n{{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} || {{{municipality}}} {{/first}} {{#first}} {{{suburb}}} || {{{city_district}}} || {{{neighbourhood}}} {{/first}} {{{road}}} {{{house_number}}}\n{{{addition}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{attention}}}\n"
 };
 var TW_en = {
-	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{house_number}}}, {{{road}}}\n{{{addition}}}\n{{#first}} {{{suburb}}} || {{{city_district}}} || {{{neighbourhood}}} {{/first}}, {{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} {{/first}} {{{postcode}}}\n{{{state}}} {{{county}}}\n{{{country}}}\n{{{infos}}}\n"
+	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{house_number}}}, {{{road}}}\n{{{addition}}}\n{{#first}} {{{suburb}}} || {{{city_district}}} || {{{neighbourhood}}} {{/first}}, {{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} {{/first}} {{{postcode}}}\n{{{country}}}\n{{{infos}}}\n"
 };
 var TW_zh = {
 	address_template: "{{{country}}}\n{{{infos}}}\n{{{postcode}}}\n{{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} || {{{municipality}}} {{/first}} {{#first}} {{{suburb}}} || {{{city_district}}} || {{{neighbourhood}}} {{/first}} {{{road}}} {{{house_number}}}\n{{{addition}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{attention}}}\n"
 };
 var TZ$2 = {
-	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{house_number}}} {{{road}}}\n{{{addition}}}\n{{{postcode}}} {{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} || {{{state_district}}} {{/first}}\n{{{state}}}\n{{{state}}} {{{county}}}\n{{{country}}}\n{{{infos}}}\n",
-	fallback_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{house_number}}} {{{road}}}\n{{{addition}}}\n{{{postcode}}} {{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} || {{{state_district}}} {{/first}}\n{{{state}}}\n{{{state}}} {{{county}}}\n{{{country}}}\n{{{infos}}}\n",
+	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{house_number}}} {{{road}}}\n{{{addition}}}\n{{{postcode}}} {{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} || {{{state_district}}} {{/first}}\n{{{state}}}\n{{{country}}}\n{{{infos}}}\n",
+	fallback_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{house_number}}} {{{road}}}\n{{{addition}}}\n{{{postcode}}} {{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} || {{{state_district}}} {{/first}}\n{{{state}}}\n{{{country}}}\n{{{infos}}}\n",
 	postformat_replace: [
 		[
 			"Dar es Salaam\nDar es Salaam",
@@ -2106,10 +2106,10 @@ var TZ$2 = {
 	]
 };
 var UA$2 = {
-	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{road}}}, {{{house_number}}}\n{{{addition}}}\n{{#first}} {{{suburb}}} || {{{city_district}}} || {{{state_district}}} {{/first}}\n{{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} || {{{municipality}}} {{/first}}\n{{#first}} {{{region}}} || {{{state}}} || {{/first}}\n{{{postcode}}}\n{{{state}}} {{{county}}}\n{{{country}}}\n{{{infos}}}\n"
+	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{road}}}, {{{house_number}}}\n{{{addition}}}\n{{#first}} {{{suburb}}} || {{{city_district}}} || {{{state_district}}} {{/first}}\n{{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} || {{{municipality}}} {{/first}}\n{{#first}} {{{region}}} || {{{state}}} || {{/first}}\n{{{postcode}}}\n{{{country}}}\n{{{infos}}}\n"
 };
 var UG$2 = {
-	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{house_number}}} {{{road}}}\n{{{addition}}}\n{{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} || {{{municipality}}} || {{{county}}} || {{{state_district}}} || {{{state}}} || {{/first}}\n{{{state}}} {{{county}}}\n{{{country}}}\n{{{infos}}}\n"
+	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{house_number}}} {{{road}}}\n{{{addition}}}\n{{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} || {{{municipality}}} || {{{county}}} || {{{state_district}}} || {{{state}}} || {{/first}}\n{{{country}}}\n{{{infos}}}\n"
 };
 var UM$2 = {
 	fallback_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{road}}} {{{house_number}}}\n{{{addition}}}\n{{{place}}}\n{{#first}} {{{suburb}}} || {{{village}}} || {{{hamlet}}} {{/first}}\n{{#first}} {{{city}}} || {{{town}}} || {{{municipality}}} || {{{county}}} || {{{island}}} || {{{state_district}}} {{/first}}, {{#first}} || {{{state}}} || {{{state_code}}} {{/first}}\n{{{country}}}\n{{{infos}}}\n",
@@ -2154,22 +2154,22 @@ var US$3 = {
 	]
 };
 var UZ$3 = {
-	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{road}}} {{{house_number}}}\n{{{addition}}}\n{{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} {{/first}}\n{{#first}} || {{{state}}} || {{{state_district}}} {{/first}}\n{{{state}}} {{{county}}}\n{{{country}}}\n{{{infos}}}\n{{{postcode}}}\n"
+	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{road}}} {{{house_number}}}\n{{{addition}}}\n{{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} {{/first}}\n{{#first}} || {{{state}}} || {{{state_district}}} {{/first}}\n{{{country}}}\n{{{infos}}}\n{{{postcode}}}\n"
 };
 var UY$3 = {
-	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{#first}} {{{road}}} || {{{place}}} || {{{hamlet}}} {{/first}} {{{house_number}}}\n{{{addition}}}\n{{{postcode}}} {{#first}} {{{postal_city}}} || {{{town}}} || {{{city}}} || {{{village}}} || {{{municipality}}} || {{{hamlet}}} || {{{county}}} || {{{state}}} || {{/first}}\n{{{archipelago}}}\n{{{state}}} {{{county}}}\n{{{country}}}\n{{{infos}}}\n"
+	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{#first}} {{{road}}} || {{{place}}} || {{{hamlet}}} {{/first}} {{{house_number}}}\n{{{addition}}}\n{{{postcode}}} {{#first}} {{{postal_city}}} || {{{town}}} || {{{city}}} || {{{village}}} || {{{municipality}}} || {{{hamlet}}} || {{{county}}} || {{{state}}} || {{/first}}\n{{{archipelago}}}\n{{{country}}}\n{{{infos}}}\n"
 };
 var VA$2 = {
 	use_country: "IT"
 };
 var VC$2 = {
-	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{road}}} {{{house_number}}}\n{{{addition}}}\n{{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} || {{{municipality}}} || {{{county}}} || {{{state_district}}} || {{{state}}} || {{/first}}\n{{{state}}} {{{county}}}\n{{{country}}}\n{{{infos}}}\n"
+	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{road}}} {{{house_number}}}\n{{{addition}}}\n{{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} || {{{municipality}}} || {{{county}}} || {{{state_district}}} || {{{state}}} || {{/first}}\n{{{country}}}\n{{{infos}}}\n"
 };
 var VE$3 = {
-	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{road}}} {{{house_number}}}\n{{{addition}}}\n{{#first}} {{{city}}} || {{{town}}} || {{{state_district}}} || {{{village}}} || {{{hamlet}}} {{/first}} {{{postcode}}}, {{#first}} {{{state_code}}} || {{{state}}} || {{/first}}\n{{{state}}} {{{county}}}\n{{{country}}}\n{{{infos}}}\n"
+	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{road}}} {{{house_number}}}\n{{{addition}}}\n{{#first}} {{{city}}} || {{{town}}} || {{{state_district}}} || {{{village}}} || {{{hamlet}}} {{/first}} {{{postcode}}}, {{#first}} {{{state_code}}} || {{{state}}} || {{/first}}\n{{{country}}}\n{{{infos}}}\n"
 };
 var VG$2 = {
-	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{house_number}}} {{{road}}}\n{{{addition}}}\n{{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} {{/first}}, {{{island}}}\n{{{state}}} {{{county}}}\n{{{country}}}, {{{postcode}}}\n"
+	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{house_number}}} {{{road}}}\n{{{addition}}}\n{{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} {{/first}}, {{{island}}}\n{{{country}}}, {{{postcode}}}\n"
 };
 var VI$3 = {
 	use_country: "US",
@@ -2177,39 +2177,39 @@ var VI$3 = {
 	add_component: "state=US Virgin Islands"
 };
 var VN$2 = {
-	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{house_number}}} {{{road}}}\n{{{addition}}}\n{{#first}} {{{suburb}}} || {{{city_district}}} || {{{neighbourhood}}} {{/first}}\n{{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} || {{{state_district}}} {{/first}}\n{{{state}}} {{{postcode}}}\n{{{state}}} {{{county}}}\n{{{country}}}\n{{{infos}}}\n"
+	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{house_number}}} {{{road}}}\n{{{addition}}}\n{{#first}} {{{suburb}}} || {{{city_district}}} || {{{neighbourhood}}} {{/first}}\n{{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} || {{{state_district}}} {{/first}}\n{{{state}}} {{{postcode}}}\n{{{country}}}\n{{{infos}}}\n"
 };
 var VU$3 = {
-	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{road}}} {{{house_number}}}\n{{{addition}}}\n{{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} || {{{municipality}}} || {{{county}}} || {{{state_district}}} || {{{state}}} || {{/first}}\n{{{state}}} {{{county}}}\n{{{country}}}\n{{{infos}}}\n"
+	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{road}}} {{{house_number}}}\n{{{addition}}}\n{{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} || {{{municipality}}} || {{{county}}} || {{{state_district}}} || {{{state}}} || {{/first}}\n{{{country}}}\n{{{infos}}}\n"
 };
 var WF$2 = {
 	use_country: "FR",
 	change_country: "Wallis-et-Futuna, France"
 };
 var WS$2 = {
-	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{road}}} {{{house_number}}}\n{{{addition}}}\n{{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} || {{{municipality}}} || {{{county}}} || {{{state_district}}} || {{{state}}} || {{/first}}\n{{{state}}} {{{county}}}\n{{{country}}}\n{{{infos}}}\n"
+	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{road}}} {{{house_number}}}\n{{{addition}}}\n{{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} || {{{municipality}}} || {{{county}}} || {{{state_district}}} || {{{state}}} || {{/first}}\n{{{country}}}\n{{{infos}}}\n"
 };
 var XC$1 = {
-	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{house_number}}} {{{road}}}\n{{{addition}}}\n{{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} || {{{municipality}}} {{/first}}\n{{{county}}}\n{{{state}}}\n{{{state}}} {{{county}}}\n{{{country}}}\n{{{infos}}}\n"
+	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{house_number}}} {{{road}}}\n{{{addition}}}\n{{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} || {{{municipality}}} {{/first}}\n{{{county}}}\n{{{state}}}\n{{{country}}}\n{{{infos}}}\n"
 };
 var XK$2 = {
-	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{house_number}}}, {{{road}}}\n{{{addition}}}\n{{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} || {{{state}}} || {{/first}} {{{postcode}}}\n{{{state}}} {{{county}}}\n{{{country}}}\n{{{infos}}}\n"
+	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{house_number}}}, {{{road}}}\n{{{addition}}}\n{{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} || {{{state}}} || {{/first}} {{{postcode}}}\n{{{country}}}\n{{{infos}}}\n"
 };
 var YE$3 = {
-	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{house_number}}}, {{{road}}}\n{{{addition}}}\n{{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} || {{{suburb}}} || {{{city_district}}} || {{{neighbourhood}}} || {{{state}}} || {{/first}}\n{{{state}}} {{{county}}}\n{{{country}}}\n{{{infos}}}\n"
+	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{house_number}}}, {{{road}}}\n{{{addition}}}\n{{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} || {{{suburb}}} || {{{city_district}}} || {{{neighbourhood}}} || {{{state}}} || {{/first}}\n{{{country}}}\n{{{infos}}}\n"
 };
 var YT$2 = {
 	use_country: "FR",
 	change_country: "Mayotte, France"
 };
 var ZA$3 = {
-	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{house_number}}} {{{road}}}\n{{{addition}}}\n{{#first}} {{{suburb}}} || {{{city_district}}} || {{{state_district}}} {{/first}}\n{{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} || {{{state}}} || {{/first}}\n{{{postcode}}}\n{{{state}}} {{{county}}}\n{{{country}}}\n{{{infos}}}\n"
+	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{house_number}}} {{{road}}}\n{{{addition}}}\n{{#first}} {{{suburb}}} || {{{city_district}}} || {{{state_district}}} {{/first}}\n{{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} || {{{state}}} || {{/first}}\n{{{postcode}}}\n{{{country}}}\n{{{infos}}}\n"
 };
 var ZM$2 = {
-	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{house_number}}} {{{road}}}\n{{{addition}}}\n{{{place}}}\n{{{postcode}}} {{#first}} {{{town}}} || {{{village}}} || {{{hamlet}}} || {{{city}}} || {{{municipality}}} || {{{state}}} || {{/first}}\n{{{state}}} {{{county}}}\n{{{country}}}\n{{{infos}}}\n"
+	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{house_number}}} {{{road}}}\n{{{addition}}}\n{{{place}}}\n{{{postcode}}} {{#first}} {{{town}}} || {{{village}}} || {{{hamlet}}} || {{{city}}} || {{{municipality}}} || {{{state}}} || {{/first}}\n{{{country}}}\n{{{infos}}}\n"
 };
 var ZW$3 = {
-	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{house_number}}} {{{road}}}\n{{{addition}}}\n{{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} || {{{municipality}}} || {{{county}}} || {{{state_district}}} || {{{state}}} || {{/first}}\n{{{state}}} {{{county}}}\n{{{country}}}\n{{{infos}}}\n"
+	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{house_number}}} {{{road}}}\n{{{addition}}}\n{{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} || {{{municipality}}} || {{{county}}} || {{{state_district}}} || {{{state}}} || {{/first}}\n{{{country}}}\n{{{infos}}}\n"
 };
 var templates = {
 	generic1: generic1,
@@ -2240,8 +2240,8 @@ var templates = {
 	fallback3: fallback3,
 	fallback4: fallback4,
 	"default": {
-	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{#first}} {{{road}}} || {{{place}}} || {{{hamlet}}} {{/first}} {{{house_number}}}\n{{{addition}}}\n{{{postcode}}} {{#first}} {{{postal_city}}} || {{{town}}} || {{{city}}} || {{{village}}} || {{{municipality}}} || {{{hamlet}}} || {{{county}}} || {{{state}}} || {{/first}}\n{{{archipelago}}}\n{{{state}}} {{{county}}}\n{{{country}}}\n{{{infos}}}\n",
-	fallback_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{road}}} {{{house_number}}}\n{{{addition}}}\n{{{place}}}\n{{#first}} {{{suburb}}} || {{{city_district}}} || {{{neighbourhood}}} || {{{island}}} {{/first}}\n{{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} || {{{municipality}}} {{/first}}\n{{#first}} || {{{county}}} || {{{state_district}}} || {{{state}}} || {{{region}}} || {{{island}}}, {{{archipelago}}} {{/first}}\n{{{state}}} {{{county}}}\n{{{country}}}\n{{{infos}}}\n"
+	address_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{#first}} {{{road}}} || {{{place}}} || {{{hamlet}}} {{/first}} {{{house_number}}}\n{{{addition}}}\n{{{postcode}}} {{#first}} {{{postal_city}}} || {{{town}}} || {{{city}}} || {{{village}}} || {{{municipality}}} || {{{hamlet}}} || {{{county}}} || {{{state}}} || {{/first}}\n{{{archipelago}}}\n{{{country}}}\n{{{infos}}}\n",
+	fallback_template: "{{{attention}}}\n{{{house}}}\n{{{floor}}} {{{door}}}\n{{{road}}} {{{house_number}}}\n{{{addition}}}\n{{{place}}}\n{{#first}} {{{suburb}}} || {{{city_district}}} || {{{neighbourhood}}} || {{{island}}} {{/first}}\n{{#first}} {{{city}}} || {{{town}}} || {{{village}}} || {{{hamlet}}} || {{{municipality}}} {{/first}}\n{{#first}} || {{{county}}} || {{{state_district}}} || {{{state}}} || {{{region}}} || {{{island}}}, {{{archipelago}}} {{/first}}\n{{{country}}}\n{{{infos}}}\n"
 },
 	AD: AD$2,
 	AE: AE$3,
